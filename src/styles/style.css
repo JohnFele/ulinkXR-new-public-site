@@ -1,0 +1,2706 @@
+.LANDING-HERO {
+  position: relative;
+  width: 1440px;
+  height: 6589px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.LANDING-HERO .ellipse {
+  position: absolute;
+  top: 4972px;
+  left: calc(50.00% - 720px);
+  width: 1440px;
+  height: 1404px;
+}
+
+.LANDING-HERO .footer {
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 1440px;
+  height: 321px;
+  background-color: transparent;
+  background-image: url(./img/bg.png);
+  background-size: 100% 100%;
+}
+
+.LANDING-HERO .group {
+  position: absolute;
+  top: 136px;
+  left: 638px;
+  width: 171px;
+  height: 134px;
+}
+
+.LANDING-HERO .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 162px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f4;
+  font-size: 16.3px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .div {
+  position: absolute;
+  top: 34px;
+  left: 1px;
+  width: 162px;
+  height: 34px;
+  color: #f4f4f4;
+  font-size: 16.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-2 {
+  position: absolute;
+  top: 67px;
+  left: 1px;
+  width: 162px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f4;
+  font-size: 16.3px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-3 {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 162px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f4;
+  font-size: 16.3px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .group-2 {
+  position: absolute;
+  top: 108px;
+  left: calc(50.00% + 258px);
+  width: 212px;
+  height: 189px;
+}
+
+.LANDING-HERO .text-wrapper-4 {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% - 106px);
+  width: 204px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #f4f4f4;
+  font-size: 21.1px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .mdi-facebook {
+  position: absolute;
+  top: 56px;
+  left: 38px;
+  width: 36px;
+  height: 36px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .text-wrapper-5 {
+  position: absolute;
+  top: 59px;
+  left: 80px;
+  width: 81px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f4;
+  font-size: 15.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .ri-instagram-fill {
+  position: absolute;
+  top: 106px;
+  left: 38px;
+  width: 34px;
+  height: 34px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .text-wrapper-6 {
+  position: absolute;
+  top: 108px;
+  left: 78px;
+  width: 88px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f4;
+  font-size: 15.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .ic-baseline-tiktok {
+  position: absolute;
+  top: 154px;
+  left: 38px;
+  width: 35px;
+  height: 35px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .text-wrapper-7 {
+  position: absolute;
+  top: 157px;
+  left: 79px;
+  width: 87px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f4;
+  font-size: 15.6px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .ULINK-logo-sigs {
+  position: absolute;
+  top: 25px;
+  left: 287px;
+  width: 157px;
+  height: 65px;
+  aspect-ratio: 2.4;
+}
+
+.LANDING-HERO .contact {
+  position: absolute;
+  top: 143px;
+  left: 279px;
+  width: 180px;
+  height: 118px;
+}
+
+.LANDING-HERO .akar-icons-globe {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 29px;
+  height: 29px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .ic-round-mail {
+  position: absolute;
+  top: 41px;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .text-wrapper-8 {
+  position: absolute;
+  top: 93px;
+  left: 42px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f4;
+  font-size: 16.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-9 {
+  position: absolute;
+  top: 47px;
+  left: 42px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f4;
+  font-size: 16.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-10 {
+  position: absolute;
+  top: 2px;
+  left: 42px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f4;
+  font-size: 16.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .mingcute-phone-fill {
+  position: absolute;
+  top: 86px;
+  left: 1px;
+  width: 32px;
+  height: 32px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .newsletter {
+  position: absolute;
+  top: 26px;
+  left: 676px;
+  width: 497px;
+  height: 57px;
+}
+
+.LANDING-HERO .text-wrapper-11 {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f4;
+  font-size: 18.9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .rectangle {
+  position: absolute;
+  top: 9px;
+  left: 215px;
+  width: 269px;
+  height: 39px;
+  background-color: #d9d9d9;
+  border-radius: 89.96px;
+}
+
+.LANDING-HERO .text-wrapper-12 {
+  position: absolute;
+  top: 18px;
+  left: 229px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--dark-navygrey);
+  font-size: 14.4px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .frame {
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  height: 57px;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 9px;
+  position: absolute;
+  top: calc(50.00% - 28px);
+  left: calc(50.00% + 110px);
+}
+
+.LANDING-HERO .component {
+  display: flex;
+  width: 116.95px;
+  height: 38.68px;
+  align-items: center;
+  justify-content: center;
+  gap: 8.1px;
+  padding: 18.89px 35.09px;
+  position: relative;
+  background-color: var(--lighter-orange);
+  border-radius: 89.96px;
+  box-shadow: 0.9px 0.9px 8.1px #eb7539;
+}
+
+.LANDING-HERO .i-WANT-TO-BENEFIT {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -9.50px;
+  margin-bottom: -8.60px;
+  margin-left: -3.61px;
+  margin-right: -3.61px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 12.6px;
+  text-align: center;
+  letter-spacing: 1.13px;
+  line-height: normal;
+}
+
+.LANDING-HERO .p {
+  position: absolute;
+  top: 379px;
+  left: calc(50.00% - 522px);
+  width: 1044px;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 23px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .OCULUS {
+  position: absolute;
+  top: calc(50.00% - 2654px);
+  left: 359px;
+  width: 183px;
+  height: 215px;
+  aspect-ratio: 0.84;
+}
+
+.LANDING-HERO .v-rexpert {
+  position: absolute;
+  top: 696px;
+  left: calc(50.00% - 120px);
+  width: 244px;
+  height: 104px;
+}
+
+.LANDING-HERO .text-wrapper-13 {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% - 52px);
+  width: 93px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .vrexpert-logo {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 240px;
+  height: 52px;
+  aspect-ratio: 4.56;
+  object-fit: cover;
+}
+
+.LANDING-HERO .text-wrapper-14 {
+  position: absolute;
+  top: 68px;
+  left: calc(50.00% - 52px);
+  width: 134px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .ulinkxr-flyers {
+  position: absolute;
+  top: 668px;
+  left: 910px;
+  width: 161px;
+  height: 161px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .button {
+  all: unset;
+  box-sizing: border-box;
+  top: 571px;
+  left: 198px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 6px 15px;
+  position: absolute;
+  background-color: var(--med-orange);
+  border-radius: 9px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.LANDING-HERO .text-wrapper-15 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--dark-grey);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.80px;
+  line-height: normal;
+}
+
+.LANDING-HERO .hero-text {
+  position: absolute;
+  top: 146px;
+  left: 198px;
+  width: 994px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+.LANDING-HERO .yourgo-tohub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 994px;
+  height: 116px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 77px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .animatedtext {
+  width: 727px;
+  height: 114px;
+  display: flex;
+}
+
+.LANDING-HERO .virtual-reality {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -350px;
+  width: 727px;
+  height: 464px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 77px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .menu {
+  position: absolute;
+  top: 3px;
+  left: calc(50.00% - 719px);
+  width: 1439px;
+  height: 87px;
+}
+
+.LANDING-HERO .text-wrapper-16 {
+  position: absolute;
+  top: 48px;
+  left: 550px;
+  width: 54px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #e35f00;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .about {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 42px;
+  left: calc(50.00% - 36px);
+}
+
+.LANDING-HERO .text-wrapper-17 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  color: #000000e6;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .plans {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 42px;
+  left: 824px;
+}
+
+.LANDING-HERO .contact-2 {
+  position: absolute;
+  top: 53px;
+  left: 1105px;
+  width: 116px;
+  height: 20px;
+  display: flex;
+}
+
+.LANDING-HERO .img {
+  margin-top: 1px;
+  width: 19px;
+  height: 19px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .ri-instagram-fill-2 {
+  margin-top: 1px;
+  width: 19px;
+  height: 19px;
+  margin-left: 6.1px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .ic-baseline-tiktok-2 {
+  margin-top: 1px;
+  width: 19px;
+  height: 19px;
+  margin-left: 6.7px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .ic-round-mail-2 {
+  margin-top: 1px;
+  width: 19px;
+  height: 19px;
+  margin-left: 3.1px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .mingcute-phone-fill-2 {
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .logo {
+  position: absolute;
+  top: 38px;
+  left: 188px;
+  width: 116px;
+  height: 48px;
+  background-image: url(./img/ULINK-logo-sigs-1-1.png);
+  background-size: 100% 100%;
+}
+
+.LANDING-HERO .vision {
+  position: absolute;
+  top: 2670px;
+  left: calc(50.00% - 720px);
+  width: 1440px;
+  height: 484px;
+}
+
+.LANDING-HERO .text {
+  position: absolute;
+  top: 34px;
+  left: calc(50.00% - 312px);
+  width: 625px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Italic", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #000000;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .element {
+  position: absolute;
+  top: 17px;
+  left: calc(50.00% - 189px);
+  width: 379px;
+  height: 135px;
+  aspect-ratio: 2.81;
+}
+
+.LANDING-HERO .group-3 {
+  position: absolute;
+  top: 99px;
+  left: calc(50.00% - 555px);
+  width: 1085px;
+  height: 330px;
+}
+
+.LANDING-HERO .rectangle-2 {
+  position: absolute;
+  top: 74px;
+  left: calc(50.00% - 542px);
+  width: 1069px;
+  height: 244px;
+  background-color: #ffffff;
+  box-shadow: 6px 6px 3px 1px #00000040;
+}
+
+.LANDING-HERO .vision-the-next {
+  position: absolute;
+  top: 89px;
+  left: calc(50.00% - 516px);
+  width: 765px;
+  height: 196px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 27px;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+
+.LANDING-HERO .span {
+  line-height: 46px;
+}
+
+.LANDING-HERO .text-wrapper-18 {
+  font-size: 26px;
+  line-height: 46px;
+}
+
+.LANDING-HERO .text-wrapper-19 {
+  font-family: "Poppins-Italic", Helvetica;
+  font-style: italic;
+}
+
+.LANDING-HERO .text-wrapper-20 {
+  font-size: 17px;
+  line-height: 33px;
+}
+
+.LANDING-HERO .ulinkxr-flyers-2 {
+  position: absolute;
+  top: 0;
+  left: 820px;
+  width: 263px;
+  height: 330px;
+  aspect-ratio: 0.8;
+}
+
+.LANDING-HERO .why-this-matters {
+  position: absolute;
+  top: 4190px;
+  left: -5px;
+  width: 1445px;
+  height: 764px;
+  display: flex;
+  flex-direction: column;
+}
+
+.LANDING-HERO .why-this-matters-for {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  height: 45px;
+  width: 541px;
+  align-self: center;
+  margin-top: -3.8px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .teacher-friendly {
+  margin-left: 196px;
+  width: 1059px;
+  height: 81px;
+  position: relative;
+  margin-top: 20.8px;
+  background-color: #fd9d49e6;
+  box-shadow: 3px 6px 9px #000000b8;
+}
+
+.LANDING-HERO .group-4 {
+  position: absolute;
+  width: 4.71%;
+  height: 61.64%;
+  top: 18.92%;
+  left: 94.18%;
+  background-image: url(./img/vector-22.svg);
+  background-size: 100% 100%;
+}
+
+.LANDING-HERO .vector {
+  position: absolute;
+  width: 57.06%;
+  height: 32.65%;
+  top: 45.00%;
+  left: 21.47%;
+}
+
+.LANDING-HERO .vector-2 {
+  position: absolute;
+  width: 5.88%;
+  height: 50.00%;
+  top: 23.53%;
+  left: 47.06%;
+}
+
+.LANDING-HERO .mdi-teacher {
+  position: absolute;
+  width: 6.47%;
+  top: 6px;
+  left: 0;
+  height: 68px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .text-wrapper-21 {
+  position: absolute;
+  width: 29.56%;
+  height: 40.74%;
+  top: 29.63%;
+  left: 10.90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+}
+
+.LANDING-HERO .div-2 {
+  margin-left: 196px;
+  width: 1059px;
+  height: 81px;
+  position: relative;
+  margin-top: 67px;
+  background-color: #fd9d49e6;
+  box-shadow: 3px 6px 9px #000000b8;
+}
+
+.LANDING-HERO .group-5 {
+  position: absolute;
+  width: 4.71%;
+  height: 61.64%;
+  top: 18.92%;
+  left: 94.18%;
+  background-image: url(./img/vector.svg);
+  background-size: 100% 100%;
+}
+
+.LANDING-HERO .scalable-flexible {
+  position: absolute;
+  width: 21.81%;
+  height: 40.74%;
+  top: 29.63%;
+  left: 10.90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+}
+
+.LANDING-HERO .heroicons-scale {
+  position: absolute;
+  top: 7px;
+  left: 11px;
+  width: 68px;
+  height: 68px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .group-6 {
+  position: absolute;
+  width: 4.71%;
+  height: 61.64%;
+  top: 18.92%;
+  left: 94.18%;
+  background-image: url(./img/vector-23.svg);
+  background-size: 100% 100%;
+}
+
+.LANDING-HERO .text-wrapper-22 {
+  position: absolute;
+  width: 40.60%;
+  height: 40.74%;
+  top: 29.63%;
+  left: 10.90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+}
+
+.LANDING-HERO .XR {
+  position: absolute;
+  top: 3px;
+  left: calc(50.00% - 516px);
+  width: 71px;
+  height: 75px;
+  aspect-ratio: 0.94;
+}
+
+.LANDING-HERO .group-7 {
+  position: absolute;
+  width: 4.71%;
+  height: 61.64%;
+  top: 18.92%;
+  left: 94.18%;
+  background-image: url(./img/image.svg);
+  background-size: 100% 100%;
+}
+
+.LANDING-HERO .text-wrapper-23 {
+  position: absolute;
+  width: 35.88%;
+  height: 40.74%;
+  top: 29.63%;
+  left: 10.90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+}
+
+.LANDING-HERO .img-2 {
+  position: absolute;
+  top: 6px;
+  left: 13px;
+  width: 68px;
+  height: 68px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .group-8 {
+  position: absolute;
+  width: 4.71%;
+  height: 61.64%;
+  top: 18.92%;
+  left: 94.18%;
+  background-image: url(./img/vector-5.svg);
+  background-size: 100% 100%;
+}
+
+.LANDING-HERO .remedial-at-home {
+  position: absolute;
+  width: 35.41%;
+  height: 40.74%;
+  top: 29.63%;
+  left: 10.90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 33px;
+  white-space: nowrap;
+}
+
+.LANDING-HERO .classroom-kit {
+  position: absolute;
+  top: 3154px;
+  left: 5px;
+  width: 1441px;
+  height: 1033px;
+}
+
+.LANDING-HERO .oculus-wrapper {
+  position: absolute;
+  top: 123px;
+  left: calc(50.00% - 358px);
+  width: 715px;
+  height: 715px;
+  border-radius: 357.51px;
+  border: 15.38px solid;
+  border-color: var(--lighter-orange);
+}
+
+.LANDING-HERO .oculus {
+  position: relative;
+  width: 41.70%;
+  height: 31.18%;
+  top: -7.69%;
+  left: 57.20%;
+}
+
+.LANDING-HERO .group-9 {
+  position: absolute;
+  width: 134.73%;
+  height: 100%;
+  top: 0;
+  left: 12.61%;
+}
+
+.LANDING-HERO .ellipse-2 {
+  position: absolute;
+  width: 55.51%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--light-navygrey);
+  border-radius: 111.48px;
+}
+
+.LANDING-HERO .text-wrapper-24 {
+  position: absolute;
+  top: 195px;
+  left: 209px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16.2px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .line {
+  top: 219px;
+  left: 250px;
+  width: 187px;
+  position: absolute;
+  height: 8px;
+}
+
+.LANDING-HERO .OCULUS-2 {
+  position: absolute;
+  top: calc(50.00% - 104px);
+  left: 54px;
+  width: 186px;
+  height: 219px;
+  aspect-ratio: 0.84;
+}
+
+.LANDING-HERO .LEARN-MORE-wrapper {
+  top: 460px;
+  left: calc(50.00% - 98px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 6px 15px;
+  position: absolute;
+  background-color: var(--med-orange);
+  border-radius: 9px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.LANDING-HERO .group-10 {
+  position: absolute;
+  top: 285px;
+  left: 529px;
+  width: 396px;
+  height: 123px;
+}
+
+.LANDING-HERO .text-wrapper-25 {
+  position: absolute;
+  top: 79px;
+  left: 14px;
+  transform: rotate(-53.56deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-26 {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  transform: rotate(-46.04deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-27 {
+  position: absolute;
+  top: 42px;
+  left: 50px;
+  transform: rotate(-38.37deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-28 {
+  position: absolute;
+  top: 31px;
+  left: 71px;
+  transform: rotate(-32.84deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-29 {
+  position: absolute;
+  top: 21px;
+  left: 81px;
+  transform: rotate(-26.70deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-30 {
+  position: absolute;
+  top: 12px;
+  left: 109px;
+  transform: rotate(-20.26deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-31 {
+  position: absolute;
+  top: 6px;
+  left: 123px;
+  transform: rotate(-14.12deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-32 {
+  position: absolute;
+  top: 1px;
+  left: 149px;
+  transform: rotate(-6.75deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-33 {
+  position: absolute;
+  top: 0;
+  left: 172px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-34 {
+  position: absolute;
+  top: 1px;
+  left: 195px;
+  transform: rotate(6.14deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-35 {
+  position: absolute;
+  top: 5px;
+  left: 214px;
+  transform: rotate(12.74deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-36 {
+  position: absolute;
+  top: 12px;
+  left: 239px;
+  transform: rotate(20.41deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-37 {
+  position: absolute;
+  top: 26px;
+  left: 262px;
+  transform: rotate(29.93deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-38 {
+  position: absolute;
+  top: 40px;
+  left: 296px;
+  transform: rotate(37.45deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-39 {
+  position: absolute;
+  top: 53px;
+  left: 304px;
+  transform: rotate(43.28deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-40 {
+  position: absolute;
+  top: 68px;
+  left: 325px;
+  transform: rotate(49.42deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-41 {
+  position: absolute;
+  top: 82px;
+  left: 333px;
+  transform: rotate(54.33deg);
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .charge-station {
+  position: absolute;
+  top: 117px;
+  left: 257px;
+  width: 250px;
+  height: 255px;
+}
+
+.LANDING-HERO .group-11 {
+  position: absolute;
+  width: 100.00%;
+  height: 100%;
+  top: 0;
+  left: 19.98%;
+}
+
+.LANDING-HERO .ellipse-3 {
+  position: absolute;
+  width: 89.08%;
+  height: 87.58%;
+  top: 12.42%;
+  left: 10.92%;
+  background-color: var(--light-navygrey);
+  border-radius: 111.48px;
+}
+
+.LANDING-HERO .flight-case-x-pico {
+  position: absolute;
+  width: 90.73%;
+  top: 0;
+  left: 0;
+  height: 223px;
+  aspect-ratio: 1.02;
+  object-fit: cover;
+}
+
+.LANDING-HERO .text-wrapper-42 {
+  position: absolute;
+  top: 253px;
+  left: -86px;
+  width: 211px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 15.4px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .line-2 {
+  top: 277px;
+  left: -78px;
+  width: 196px;
+  position: absolute;
+  height: 8px;
+}
+
+.LANDING-HERO .content {
+  position: absolute;
+  top: 414px;
+  left: 934px;
+  width: 226px;
+  height: 223px;
+}
+
+.LANDING-HERO .group-12 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.LANDING-HERO .ellipse-4 {
+  position: absolute;
+  width: 98.52%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--light-navygrey);
+  border-radius: 111.48px;
+}
+
+.LANDING-HERO .ulinkxr-flyers-3 {
+  position: absolute;
+  width: 97.21%;
+  top: 25px;
+  left: 2.79%;
+  height: 169px;
+  mix-blend-mode: luminosity;
+  aspect-ratio: 1.31;
+}
+
+.LANDING-HERO .text-wrapper-43 {
+  position: absolute;
+  top: 223px;
+  left: 98px;
+  width: 231px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 15.4px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.LANDING-HERO .line-3 {
+  top: 244px;
+  left: 90px;
+  width: 237px;
+  position: absolute;
+  height: 8px;
+}
+
+.LANDING-HERO .tablet {
+  position: absolute;
+  top: 525px;
+  left: 249px;
+  width: 244px;
+  height: 223px;
+}
+
+.LANDING-HERO .ellipse-5 {
+  position: absolute;
+  width: 91.26%;
+  height: 100%;
+  top: 0;
+  left: 8.74%;
+  background-color: var(--light-navygrey);
+  border-radius: 111.48px;
+}
+
+.LANDING-HERO .ulinkxr-flyers-4 {
+  position: absolute;
+  width: 84.31%;
+  top: 9px;
+  left: 0;
+  height: 206px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .group-13 {
+  position: absolute;
+  top: 230px;
+  left: -60px;
+  width: 352px;
+  height: 29px;
+}
+
+.LANDING-HERO .text-wrapper-44 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 328px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 15.4px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .line-4 {
+  top: 21px;
+  left: 12px;
+  width: 337px;
+  position: absolute;
+  height: 8px;
+}
+
+.LANDING-HERO .sla {
+  position: absolute;
+  top: 717px;
+  left: 578px;
+  width: 349px;
+  height: 223px;
+}
+
+.LANDING-HERO .ellipse-6 {
+  position: absolute;
+  width: 63.82%;
+  height: 100%;
+  top: 0;
+  left: 11.98%;
+  background-color: var(--light-navygrey);
+  border-radius: 111.48px;
+}
+
+.LANDING-HERO .ulinkxr-flyers-5 {
+  position: absolute;
+  width: 100%;
+  top: 18px;
+  left: 0;
+  height: 197px;
+  aspect-ratio: 1.78;
+  object-fit: cover;
+}
+
+.LANDING-HERO .group-14 {
+  position: absolute;
+  top: 220px;
+  left: calc(50.00% - 298px);
+  width: 597px;
+  height: 34px;
+}
+
+.LANDING-HERO .line-5 {
+  top: 26px;
+  left: calc(50.00% - 296px);
+  width: 591px;
+  position: absolute;
+  height: 8px;
+}
+
+.LANDING-HERO .monthly-SLA-content {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% - 298px);
+  width: 595px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 15.4px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .why-choose-us {
+  position: absolute;
+  top: 2063px;
+  left: 0;
+  width: 1443px;
+  height: 606px;
+}
+
+.LANDING-HERO .unsplash-xsiqbsq {
+  position: absolute;
+  top: 151px;
+  left: 0;
+  width: 1440px;
+  height: 455px;
+  object-fit: cover;
+}
+
+.LANDING-HERO .why-choose-ulink {
+  position: absolute;
+  top: 61px;
+  left: calc(50.00% - 288px);
+  height: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 59px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-45 {
+  font-weight: 500;
+  color: #000000;
+}
+
+.LANDING-HERO .text-wrapper-46 {
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #ff8d36;
+}
+
+.LANDING-HERO .div-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  top: 470px;
+  left: 519px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 6px 15px;
+  position: absolute;
+  background-color: var(--med-orange);
+  border-radius: 9px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.LANDING-HERO .button-2 {
+  top: 470px;
+  left: 744px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 6px 15px;
+  position: absolute;
+  background-color: var(--med-orange);
+  border-radius: 9px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.LANDING-HERO .banner {
+  position: absolute;
+  top: 0;
+  left: 1065px;
+  width: 376px;
+  height: 51px;
+  display: flex;
+  gap: 4.3px;
+  background-color: #ffffff;
+  box-shadow: 0.86px 0.86px 7.78px #eb7539;
+}
+
+.LANDING-HERO .ellipse-7 {
+  margin-top: 12.1px;
+  width: 27.66px;
+  height: 27.66px;
+  margin-left: 5.2px;
+  background-color: var(--med-orange);
+  border-radius: 13.83px;
+}
+
+.LANDING-HERO .text-wrapper-47 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12.1px;
+  width: 320px;
+  height: 27px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 18.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .solutions {
+  position: absolute;
+  top: 863px;
+  left: calc(50.00% - 716px);
+  width: 1439px;
+  height: 1200px;
+}
+
+.LANDING-HERO .text-wrapper-48 {
+  position: absolute;
+  top: 10px;
+  left: calc(50.00% - 210px);
+  width: 421px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 39px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .coding-robotics {
+  position: absolute;
+  top: 464px;
+  left: calc(50.00% - 546px);
+  width: 486px;
+  height: 302px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 6px 3px #00000040;
+}
+
+.LANDING-HERO .text-wrapper-49 {
+  position: absolute;
+  width: 59.05%;
+  height: 10.61%;
+  top: 61.36%;
+  left: 3.91%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-50 {
+  position: absolute;
+  width: 58.23%;
+  height: 17.91%;
+  top: 77.44%;
+  left: 3.91%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .button-3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 6px 15px;
+  position: absolute;
+  width: 35.39%;
+  height: 13.93%;
+  top: 79.26%;
+  left: 57.61%;
+  background-color: var(--med-orange);
+  border-radius: 9px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.LANDING-HERO .XR-2 {
+  position: absolute;
+  width: 69.96%;
+  top: -8px;
+  left: 15.02%;
+  height: 191px;
+  mix-blend-mode: luminosity;
+  aspect-ratio: 1.78;
+  object-fit: cover;
+}
+
+.LANDING-HERO .interactive {
+  position: absolute;
+  top: 464px;
+  left: calc(50.00% + 54px);
+  width: 486px;
+  height: 302px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 6px 3px #00000040;
+}
+
+.LANDING-HERO .XR-3 {
+  position: absolute;
+  width: 73.05%;
+  top: 10px;
+  left: 13.37%;
+  height: 172px;
+  mix-blend-mode: luminosity;
+  aspect-ratio: 2.06;
+}
+
+.LANDING-HERO .virtual-reality-kit {
+  position: absolute;
+  top: 103px;
+  left: 173px;
+  width: 486px;
+  height: 302px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 6px 3px #00000040;
+}
+
+.LANDING-HERO .group-wrapper {
+  position: absolute;
+  width: 180px;
+  height: 177px;
+  top: 10px;
+  left: 242px;
+  display: flex;
+}
+
+.LANDING-HERO .flight-case-x-pico-wrapper {
+  margin-top: 0;
+  width: 180.38px;
+  height: 177.21px;
+  margin-left: -0.0%;
+  margin-right: 0.0%;
+  flex: 1;
+  display: flex;
+  transform: rotate(180deg);
+}
+
+.LANDING-HERO .flight-case-x-pico-2 {
+  margin-top: 0;
+  height: 177.21px;
+  flex: 1;
+  transform: rotate(-180deg);
+  aspect-ratio: 1.02;
+  object-fit: cover;
+}
+
+.LANDING-HERO .group-15 {
+  position: absolute;
+  width: 54.12%;
+  height: 34.74%;
+  top: 61.36%;
+  left: 3.91%;
+}
+
+.LANDING-HERO .text-wrapper-51 {
+  position: absolute;
+  width: 98.48%;
+  height: 30.84%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .meta-quest-mixed {
+  position: absolute;
+  width: 90.41%;
+  height: 57.93%;
+  top: 42.07%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .button-4 {
+  width: 35.39%;
+  height: 13.93%;
+  top: 77.48%;
+  left: 57.61%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 6px 15px;
+  position: absolute;
+  background-color: var(--med-orange);
+  border-radius: 9px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.LANDING-HERO .OCULUS-3 {
+  position: absolute;
+  top: calc(50.00% - 138px);
+  left: 72px;
+  width: 142px;
+  height: 166px;
+  aspect-ratio: 0.84;
+}
+
+.LANDING-HERO .vr-arsoftware {
+  position: absolute;
+  top: 103px;
+  left: 773px;
+  width: 486px;
+  height: 302px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 6px 3px #00000040;
+}
+
+.LANDING-HERO .group-16 {
+  position: absolute;
+  width: 63.70%;
+  height: 51.27%;
+  top: 6.82%;
+  left: 18.11%;
+  mix-blend-mode: luminosity;
+}
+
+.LANDING-HERO .ellipse-8 {
+  position: absolute;
+  width: 51.01%;
+  height: 100%;
+  top: 0;
+  left: 48.99%;
+  object-fit: cover;
+}
+
+.LANDING-HERO .unnamed {
+  position: absolute;
+  width: 41.38%;
+  top: 13px;
+  left: 0;
+  height: 128px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.LANDING-HERO .text-wrapper-52 {
+  position: absolute;
+  width: 36.42%;
+  height: 10.71%;
+  top: 61.36%;
+  left: 3.91%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .complete-VR-AR {
+  position: absolute;
+  width: 48.93%;
+  height: 20.12%;
+  top: 75.98%;
+  left: 3.91%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .button-5 {
+  width: 35.39%;
+  height: 13.93%;
+  top: 77.48%;
+  left: 60.49%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 6px 15px;
+  position: absolute;
+  background-color: var(--med-orange);
+  border-radius: 9px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.LANDING-HERO .office {
+  position: absolute;
+  top: 826px;
+  left: calc(50.00% - 546px);
+  width: 486px;
+  height: 302px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 6px 3px #00000040;
+}
+
+.LANDING-HERO .XR-4 {
+  position: absolute;
+  width: 52.47%;
+  top: 25px;
+  left: 47.53%;
+  height: 144px;
+  mix-blend-mode: luminosity;
+  aspect-ratio: 1.78;
+  object-fit: cover;
+}
+
+.LANDING-HERO .XR-5 {
+  position: absolute;
+  width: 51.65%;
+  top: 25px;
+  left: 2.47%;
+  height: 141px;
+  mix-blend-mode: luminosity;
+  aspect-ratio: 1.78;
+  object-fit: cover;
+}
+
+.LANDING-HERO .text-wrapper-53 {
+  position: absolute;
+  width: 46.50%;
+  height: 10.61%;
+  top: 61.36%;
+  left: 3.91%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-54 {
+  position: absolute;
+  width: 48.93%;
+  height: 17.91%;
+  top: 77.31%;
+  left: 3.91%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .button-6 {
+  width: 35.39%;
+  height: 13.93%;
+  top: 79.26%;
+  left: 60.49%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 6px 15px;
+  position: absolute;
+  background-color: var(--med-orange);
+  border-radius: 9px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.LANDING-HERO .virtualisation {
+  position: absolute;
+  top: 826px;
+  left: calc(50.00% + 54px);
+  width: 486px;
+  height: 302px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 6px 3px #00000040;
+}
+
+.LANDING-HERO .text-wrapper-55 {
+  position: absolute;
+  width: 32.10%;
+  height: 10.71%;
+  top: 61.36%;
+  left: 3.91%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-56 {
+  position: absolute;
+  width: 48.93%;
+  height: 20.12%;
+  top: 76.31%;
+  left: 3.91%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .image {
+  position: absolute;
+  width: 74.90%;
+  top: 32px;
+  left: 12.55%;
+  height: 121px;
+  aspect-ratio: 3;
+  object-fit: cover;
+}
+
+.LANDING-HERO .button-7 {
+  width: 35.39%;
+  height: 13.93%;
+  top: 79.10%;
+  left: 60.49%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 6px 15px;
+  position: absolute;
+  background-color: var(--med-orange);
+  border-radius: 9px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.LANDING-HERO .FAQ {
+  position: absolute;
+  top: 4974px;
+  left: 1px;
+  width: 1438px;
+  height: 1324px;
+  display: flex;
+  flex-direction: column;
+}
+
+.LANDING-HERO .text-wrapper-57 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 109px;
+  width: 180px;
+  align-self: center;
+  margin-top: 2.5px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #f4f4f4;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .faq {
+  margin-left: 31px;
+  height: 64.27px;
+  width: 811px;
+  align-self: center;
+  position: relative;
+  margin-top: 0.5px;
+  background-color: var(--variable-collection-med-orange);
+  box-shadow: 3px 6px 9px #000000b8;
+}
+
+.LANDING-HERO .text-wrapper-58 {
+  position: absolute;
+  width: 82.63%;
+  height: 68.67%;
+  top: 15.56%;
+  left: 2.22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .material-symbols {
+  position: absolute;
+  width: 5.55%;
+  top: 9px;
+  left: 93.59%;
+  height: 45px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .faq-2 {
+  margin-left: 329px;
+  width: 811px;
+  height: 64.27px;
+  position: relative;
+  margin-top: 62.7px;
+  background-color: var(--variable-collection-med-orange);
+  box-shadow: 3px 6px 9px #000000b8;
+}
+
+.LANDING-HERO .text-wrapper-59 {
+  position: absolute;
+  width: 52.29%;
+  height: 68.67%;
+  top: 15.56%;
+  left: 2.22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .vector-wrapper {
+  top: 10px;
+  position: absolute;
+  width: 5.55%;
+  left: 93.59%;
+  height: 44px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .vector-3 {
+  position: absolute;
+  width: 83.33%;
+  height: 83.33%;
+  top: 8.33%;
+  left: 8.33%;
+}
+
+.LANDING-HERO .faq-3 {
+  margin-left: 329px;
+  width: 811px;
+  height: 63.5px;
+  position: relative;
+  margin-top: 63.3px;
+  background-color: var(--variable-collection-med-orange);
+  box-shadow: 3px 6px 9px #000000b8;
+}
+
+.LANDING-HERO .text-wrapper-60 {
+  position: absolute;
+  width: 66.98%;
+  height: 69.51%;
+  top: 15.75%;
+  left: 2.22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .img-wrapper {
+  top: 9px;
+  position: absolute;
+  width: 5.55%;
+  left: 93.59%;
+  height: 44px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .faq-4 {
+  margin-left: 329px;
+  width: 811px;
+  height: 64.27px;
+  position: relative;
+  margin-top: 63.0px;
+  background-color: var(--variable-collection-med-orange);
+  box-shadow: 3px 6px 9px #000000b8;
+}
+
+.LANDING-HERO .text-wrapper-61 {
+  position: absolute;
+  width: 62.88%;
+  height: 69.88%;
+  top: 14.00%;
+  left: 2.22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-62 {
+  position: absolute;
+  width: 53.44%;
+  height: 69.88%;
+  top: 14.00%;
+  left: 2.22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .faq-5 {
+  margin-left: 329px;
+  width: 811px;
+  height: 63.5px;
+  position: relative;
+  margin-top: 63.0px;
+  background-color: var(--variable-collection-med-orange);
+  box-shadow: 3px 6px 9px #000000b8;
+}
+
+.LANDING-HERO .text-wrapper-63 {
+  position: absolute;
+  width: 84.11%;
+  height: 69.30%;
+  top: 14.17%;
+  left: 2.25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-64 {
+  position: absolute;
+  width: 45.99%;
+  height: 68.67%;
+  top: 15.56%;
+  left: 2.22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-65 {
+  position: absolute;
+  width: 37.79%;
+  height: 68.67%;
+  top: 15.56%;
+  left: 2.22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .how-can-coding {
+  position: absolute;
+  width: 78.15%;
+  height: 68.67%;
+  top: 15.56%;
+  left: 2.22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .why-choose-ulink-2 {
+  position: absolute;
+  top: 2249px;
+  left: calc(50.00% - 478px);
+  width: 957px;
+  height: 281px;
+  overflow: hidden;
+}
+
+.LANDING-HERO .ei-arrow-left {
+  left: 0;
+  position: absolute;
+  top: 51px;
+  width: 141px;
+  height: 142px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .ei-arrow-left-2 {
+  position: relative;
+  width: 100.71%;
+  height: 99.30%;
+  transform: rotate(-90deg);
+}
+
+.LANDING-HERO .vector-4 {
+  position: absolute;
+  width: 68.00%;
+  height: 68.00%;
+  top: 15.76%;
+  left: 16.24%;
+  transform: rotate(90deg);
+}
+
+.LANDING-HERO .vector-5 {
+  position: absolute;
+  width: 38.80%;
+  height: 22.20%;
+  top: 22.76%;
+  left: 38.98%;
+  transform: rotate(90deg);
+}
+
+.LANDING-HERO .vector-6 {
+  position: absolute;
+  width: 4.00%;
+  height: 34.00%;
+  top: 48.99%;
+  left: 33.12%;
+  transform: rotate(90deg);
+}
+
+.LANDING-HERO .ei-arrow-righr {
+  left: 816px;
+  position: absolute;
+  top: 51px;
+  width: 141px;
+  height: 142px;
+  aspect-ratio: 1;
+}
+
+.LANDING-HERO .ei-arrow-righr-2 {
+  position: relative;
+  width: 100.71%;
+  height: 99.30%;
+  transform: rotate(90deg);
+}
+
+.LANDING-HERO .vector-7 {
+  position: absolute;
+  width: 68.00%;
+  height: 68.00%;
+  top: 15.76%;
+  left: 16.24%;
+  transform: rotate(-90deg);
+}
+
+.LANDING-HERO .vector-8 {
+  position: absolute;
+  width: 38.80%;
+  height: 22.20%;
+  top: 22.76%;
+  left: 38.98%;
+  transform: rotate(-90deg);
+}
+
+.LANDING-HERO .vector-9 {
+  position: absolute;
+  width: 4.00%;
+  height: 34.00%;
+  top: 48.99%;
+  left: 33.12%;
+  transform: rotate(-90deg);
+}
+
+.LANDING-HERO .acc-scalable {
+  position: absolute;
+  top: 0;
+  left: 169px;
+  width: 619px;
+  height: 244px;
+  display: flex;
+  background-color: #ffffffcf;
+  box-shadow: 6px 6px 3px 1px #00000040;
+}
+
+.LANDING-HERO .group-17 {
+  margin-top: 37px;
+  width: 580px;
+  height: 169.75px;
+  margin-left: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 19.8px;
+}
+
+.LANDING-HERO .accessible-scalable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 576px;
+  height: 37.94px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-66 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 51px;
+  width: 480px;
+  height: 112px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .innov-first {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% + 1318px);
+  width: 619px;
+  height: 244px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffffcf;
+  box-shadow: 6px 6px 3px 1px #00000040;
+}
+
+.LANDING-HERO .innovation-first {
+  margin-top: 26.5px;
+  height: 182.49px;
+  margin-left: 4px;
+  width: 547px;
+  position: relative;
+}
+
+.LANDING-HERO .text-wrapper-67 {
+  position: absolute;
+  top: calc(50.00% - 91px);
+  left: calc(50.00% - 140px);
+  width: 277px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.LANDING-HERO .text-wrapper-68 {
+  position: absolute;
+  top: calc(50.00% - 44px);
+  left: calc(50.00% - 274px);
+  width: 543px;
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .tech-driven-since {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% + 588px);
+  width: 623px;
+  height: 244px;
+}
+
+.LANDING-HERO .rectangle-3 {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% - 312px);
+  width: 619px;
+  height: 244px;
+  background-color: #ffffffcf;
+  box-shadow: 6px 6px 3px 1px #00000040;
+}
+
+.LANDING-HERO .text-wrapper-69 {
+  position: absolute;
+  top: 77px;
+  left: calc(50.00% - 242px);
+  width: 465px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .text-wrapper-70 {
+  position: absolute;
+  top: 25px;
+  left: calc(50.00% - 242px);
+  width: 465px;
+  height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.LANDING-HERO .chat {
+  position: absolute;
+  top: 592px;
+  left: 1328px;
+  width: 51px;
+  height: 51px;
+  aspect-ratio: 1;
+  background-image: url(./img/ant-design-message-filled.svg);
+  background-size: 100% 100%;
+}

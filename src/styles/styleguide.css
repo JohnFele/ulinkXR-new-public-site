@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  /* Orange Colors */
+  --color-orange-base: #eb6200;
+  --color-orange-dark: #f36600;
+  --color-orange-main: #fc7424;
+  --color-orange-med: #ff7825;
+  --color-orange-lighter: #ff973a;
+  --color-orange-light: #ffa84e;
+  --color-orange-lightest: #fabf86;
+
+  /* Navy Grey Colors */
+  --color-navygrey-dark: #161c25;
+  --color-navygrey: #22252d;
+  --color-navygrey-med: #3f4854;
+  --color-navygrey-light: #787a7d;
+  --color-navygrey-lighter: #a7a6aa;
+  --color-navygrey-lightest: #d7dce1;
+
+  /* Navy Colors */
+  --color-navy-dark: #08162b;
+  --color-navy: #2c3238;
+  --color-navy-med: #5d687a;
+  --color-navy-light: #a1b5d4;
+  --color-navy-lighter: #aec3e4;
+  --color-navy-lightest: #e8edf3;
+
+  /* Grey Colors */
+  --color-grey-dark: #242424;
+  --color-grey: #424242;
+  --color-grey-med: #9a9a9d;
+  --color-grey-light: #d0d0d0;
+
+  /* Font Families */
+  --font-poppins: "Poppins", Helvetica, sans-serif;
+
+  /* Font Sizes */
+  --font-size-heading-1: 54px;
+  --font-size-heading-2: 27px;
+  --font-size-small-description: 20px;
+
+  /* Font Weights */
+  --font-weight-heading: 500;
+  --font-weight-description: 400;
+
+  /* Line Heights */
+  --line-height-normal: normal;
+  --line-height-small-description: 27px;
+
+  /* Letter Spacing */
+  --letter-spacing-none: 0px;
+}
+
+@layer components {
+  .btn {
+    @apply px-[15px] py-[6px] font-poppins font-bold text-sm tracking-[0.15em]
+      rounded-lg uppercase transition-all duration-200 active:scale-95;
+  }
+  
+  /* Solid Orange Button */
+  .btn-orange {
+    @apply bg-orange-med text-navygrey-dark border-[1px] border-navygrey-dark;
+  }
+  
+  .btn-orange:hover {
+    @apply bg-orange-dark cursor-pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Outlined Orange Button */
+  .btn-outline-orange {
+    @apply bg-white text-orange-med border-[1px] border-orange-med;
+  }
+  
+  .btn-outline-orange:hover {
+    @apply bg-orange-med text-white cursor-pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Dark Navy Grey Button */
+  .btn-dark {
+    @apply bg-grey text-orange-med border-[1px] border-orange-med;
+  }
+  
+  .btn-dark:hover {
+    @apply bg-grey-dark cursor-pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
