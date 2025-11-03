@@ -36,8 +36,8 @@
   --font-poppins: "Poppins", Helvetica, sans-serif;
 
   /* Font Sizes */
-  --font-size-heading-1: 54px;
-  --font-size-heading-2: 27px;
+  --font-size-heading: 54px;
+  --font-size-heading2: 27px;
   --font-size-small-description: 20px;
 
   /* Font Weights */
@@ -60,11 +60,11 @@
   
   /* Solid Orange Button */
   .btn-orange {
-    @apply bg-orange-med text-navygrey-dark border-[1px] border-navygrey-dark;
+    @apply bg-orange-lighter text-navygrey-dark border border-navygrey-dark;
   }
   
   .btn-orange:hover {
-    @apply bg-orange-dark cursor-pointer;
+    @apply bg-white text-orange-main border-orange-main cursor-pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   }
   
@@ -86,6 +86,69 @@
   .btn-dark:hover {
     @apply bg-grey-dark cursor-pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .shadow-custom {
+    box-shadow: 0 6px 6px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .shadow-hover {
+    box-shadow: 3px 2px 6px 2px rgba(0, 0, 0, 0.7);
+  }
+
+  .shadow-orange {
+    box-shadow: 3px 2px 6px 2px #ff7825;
+  }
+
+  @keyframes text-slider {
+    0% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-25%);
+    }
+    45% {
+      transform: translateY(-25%);
+    }
+    50% {
+      transform: translateY(-50%);
+    }
+    70% {
+      transform: translateY(-50%);
+    }
+    75% {
+      transform: translateY(-75%);
+    }
+    95% {
+      transform: translateY(-75%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .animate-text-slider {
+    animation: text-slider 10s ease-in-out infinite;
+  }
+
+  .hover-custom:hover {
+    @apply bg-orange-lightest scale-110;
+    box-shadow: 0 8px 8px 5px #ff973a;
+  }
+
+  .bg-why-choose-ulink-bg {
+    background-image: url("./src/assets/images/landing-why-choose-ulink-bg.png");
+    background-size: cover; /* or contain, or specific dimensions */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .header {
+    @apply font-heading text-[54px] text-navy-dark leading-normal;
   }
 }
 
