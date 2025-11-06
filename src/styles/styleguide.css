@@ -7,7 +7,7 @@
   --color-orange-main: #fc7424;
   --color-orange-med: #ff7825;
   --color-orange-lighter: #ff973a;
-  --color-orange-light: #ffa84e;
+  --color-orange-light: rgb(235, 150, 76);
   --color-orange-lightest: #fabf86;
 
   /* Navy Grey Colors */
@@ -97,7 +97,11 @@
   }
 
   .shadow-orange {
-    box-shadow: 3px 2px 6px 2px #ff7825;
+    box-shadow: 0px 2px 6px 2px #ff7825;
+  }
+
+  .shadow-bottom-right {
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
   }
 
   @keyframes text-slider {
@@ -139,6 +143,32 @@
     box-shadow: 0 8px 8px 5px #ff973a;
   }
 
+  .slider-container {
+    position: relative;
+  }
+  
+  .slider-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .slider-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .dot.active {
+    background-color: #ff7825; /* orange-med */
+    transform: scale(1.2);
+  }
+  
+  .slider-arrow:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  
+  .slider-arrow:disabled img:hover {
+    transform: none;
+  }
+
   .bg-why-choose-ulink-bg {
     background-image: url("./src/assets/images/landing-why-choose-ulink-bg.png");
     background-size: cover; /* or contain, or specific dimensions */
@@ -149,6 +179,132 @@
 
   .header {
     @apply font-heading text-[54px] text-navy-dark leading-normal;
+  }
+
+  .hover\:sound-wave-simple:hover {
+    animation: pulseWave 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes pulseWave {
+    0% {
+      box-shadow: 
+        0 2px 8px rgba(235, 98, 0, 0.2),
+        0 0 0 0 rgba(235, 98, 0, 0.4);
+    }
+    70% {
+      box-shadow: 
+        0 4px 12px rgba(235, 98, 0, 0.3),
+        0 0 0 10px rgba(235, 98, 0, 0);
+    }
+    100% {
+      box-shadow: 
+        0 2px 8px rgba(235, 98, 0, 0.2),
+        0 0 0 0 rgba(235, 98, 0, 0);
+    }
+  }
+
+  .feature-card {
+    display: grid;
+    grid-template-rows: 1fr 0fr;
+    transition: grid-template-rows 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    overflow: hidden;
+    height: 60px;
+  }
+  
+  .feature-card.expanded {
+    height: 140px;
+    @apply !bg-orange-lightest;
+    grid-template-rows: 25% 1fr;
+  }
+  
+  .feature-card.expanded .arrow-icon {
+    transform: rotate(180deg);
+  }
+  
+  /* Target the first direct child div as the top content */
+  .feature-card > div:first-child {
+    grid-row: 1;
+    min-height: 60px; /* Match your h-15 */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Target the description div */
+  .feature-card > .feature-description {
+    grid-row: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out 0.1s;
+    min-height: 0;
+    overflow: hidden;
+  }
+  
+  .feature-card.expanded > .feature-description {
+    opacity: 1;
+  }
+  
+  .feature-card.expanded .feature-title {
+    opacity: 0;
+  }
+  
+  .feature-title {
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .feature-card.expanded:hover {
+    transform: none;
+  }
+
+  .faq-card {
+    display: grid;
+    grid-template-rows: 1fr 0fr;
+    transition: grid-template-rows 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    overflow: hidden;
+    height: 60px;
+  }
+  
+  .faq-card.expanded {
+    @apply !bg-orange-lightest;
+    grid-template-rows: 10% 1fr;
+    height: 150px;
+  }
+  
+  .faq-card.expanded .faq-arrow {
+    transform: rotate(180deg);
+  }
+  
+  .faq-content {
+    grid-row: 1;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .faq-description {
+    grid-row: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out 0.1s;
+    min-height: 0;
+    overflow: hidden;
+  }
+  
+  .faq-card.expanded .faq-description {
+    opacity: 1;
+  }
+  
+  .faq-card.expanded .faq-title {
+    opacity: 0;
+  }
+  
+  .faq-title {
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .faq-card.expanded:hover {
+    transform: none;
+  }
+  
+  .faq-card:not(.expanded):hover {
+    transform: scale(1.05);
   }
 }
 
