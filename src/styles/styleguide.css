@@ -52,6 +52,45 @@
   --letter-spacing-none: 0px;
 }
 
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff7825;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e66a1f;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff7825 #f1f1f1;
+}
+
+/* Optional: Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+body:has(#mobileMenu:not(.-translate-x-full)) {
+    overflow: hidden;
+  }
+  
+  @media (max-width: 768px) {
+    #mobileMenu:not(.-translate-x-full) {
+      z-index: 40;
+    }
+  }
+
 @layer components {
   .btn {
     @apply px-[15px] py-[6px] font-poppins font-bold text-sm tracking-[0.15em]

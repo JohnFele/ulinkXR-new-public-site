@@ -7,6 +7,49 @@ document.addEventListener('DOMContentLoaded', function() {
   const faqCards = document.querySelectorAll('.faq-card');
   const navLinks = document.querySelectorAll('.nav-link');
   const currentPage = window.location.pathname;
+  const menuBtn = document.getElementById("menuBtn");
+  const navMenu = document.getElementById("navMenu");
+  const menuIcon = document.getElementById("menuIcon");
+  const desktopSocials = document.querySelector(".social-icons-desktop");
+
+  // Function to toggle the mobile menu
+  menuBtn.addEventListener("click", () => {
+    const isOpen = navMenu.classList.toggle("hidden"); // toggle visibility
+    if (!isOpen) {
+      // menu is now open
+      menuIcon.innerHTML = `
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
+      `;
+      desktopSocials.classList.add("hidden");
+    } else {
+      // menu is now closed
+      menuIcon.innerHTML = `
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      `;
+      if (window.innerWidth >= 768) {
+        desktopSocials.classList.remove("hidden");
+      }
+    }
+  });
+
+  // Show or hide desktop socials based on screen size
+  function handleResize() {
+    if (window.innerWidth < 768) {
+      desktopSocials.classList.add("hidden");
+      navMenu.classList.add("hidden"); // ensure menu starts closed
+    } else {
+      desktopSocials.classList.remove("hidden");
+      navMenu.classList.remove("hidden");
+    }
+  }
+
+  // Run once on load
+  handleResize();
+
+  // Listen for window resizing
+  window.addEventListener("resize", handleResize);
   
   navLinks.forEach(link => {
     const linkHref = link.getAttribute('href');
