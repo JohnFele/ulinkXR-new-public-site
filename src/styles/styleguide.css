@@ -194,11 +194,6 @@ body:has(#mobileMenu:not(.-translate-x-full)) {
     transform: translateY(-5px);
   }
   
-  .dot.active {
-    background-color: #ff7825; /* orange-med */
-    transform: scale(1.2);
-  }
-  
   .slider-arrow:disabled {
     opacity: 0.3;
     cursor: not-allowed;
@@ -304,7 +299,7 @@ body:has(#mobileMenu:not(.-translate-x-full)) {
   .faq-card.expanded {
     @apply !bg-orange-lightest;
     grid-template-rows: 10% 1fr;
-    height: 150px;
+    height: 200px;
   }
   
   .faq-card.expanded .faq-arrow {

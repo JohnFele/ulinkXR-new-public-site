@@ -14,128 +14,224 @@
   <body class="bg-white min-h-screen max-w-screen overflow-x-hidden relative">
     <header
       id="mainHeader"
-      class="h-[87px] w-screen flex items-center justify-between px-12 fixed z-50 top-0 backdrop-blur-md drop-shadow-md bg-white transition-all duration-300"
+      class="fixed top-0 left-0 w-full h-[87px] flex items-center justify-between px-6 md:px-12 z-50 bg-white/80 backdrop-blur-md transition-all duration-300"
     >
       <!-- Logo -->
       <a
-        href="https://www.ulink.co.za"
+        href="/"
         target="_blank"
         rel="noopener noreferrer"
-        class=""
+        class="shrink-0"
       >
         <img
-          src="./src/assets/logo/ULINK logo.png"
+          src="./src/assets/logo/ulinkxr-logo1.png"
           alt="ULink logo"
-          class="pt-3"
+          class="h-10 md:h-12 pt-2"
         />
       </a>
 
+      <!-- Hamburger Button (Mobile) -->
+      <button
+        id="menuBtn"
+        class="block md:hidden text-black focus:outline-none"
+        aria-label="Toggle menu"
+      >
+        <svg
+          id="menuIcon"
+          class="w-7 h-7"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+
       <!-- Navigation Menu -->
-      <nav class="">
-        <ul class="flex items-center gap-12">
+      <nav
+        id="navMenu"
+        class="hidden md:flex absolute md:static top-[87px] left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none flex-col md:flex-row items-center justify-center gap-6 md:gap-24 xl:gap-32 py-5 md:py-0 transition-all duration-300"
+      >
+        <!-- Nav Links -->
+        <ul
+          class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 xl:gap-20 w-full md:w-auto"
+        >
           <li>
             <a
               href="/"
-              class="nav-link text-[#000000e6] text-[15px] px-2.5 py-2.5 hover:text-orange-dark transition-colors"
+              class="nav-link text-orange-med font-bold border-orange-med border-b-2  px-2.5 py-2.5 hover:text-[#e35f00] transition-colors"
+              >HOME</a
             >
-              HOME
-            </a>
           </li>
           <li>
             <a
               href="./src/pages/about.html"
               class="nav-link text-[#000000e6] text-[15px] px-2.5 py-2.5 hover:text-[#e35f00] transition-colors"
+              >ABOUT</a
             >
-              ABOUT
-            </a>
           </li>
           <li>
             <a
               href="./src/pages/plans.html"
               class="nav-link text-[#000000e6] text-[15px] px-2.5 py-2.5 hover:text-[#e35f00] transition-colors"
+              >SOLUTIONS</a
             >
-              PLANS
-            </a>
           </li>
         </ul>
+
+        <!-- mobile social media icons -->
+          <div
+        class="flex md:hidden items-center justify-center md:justify-end gap-3 mt-6 md:mt-0"
+      >
+        <!-- Facebook -->
+        <a
+          href="https://www.facebook.com/ulinksouthafrica/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:opacity-70 transition-opacity"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+            />
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a
+          href="https://www.instagram.com/ulink2all"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:opacity-70 transition-opacity"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"
+            />
+          </svg>
+        </a>
+
+        <!-- TikTok -->
+        <a
+          href="https://www.tiktok.com/@ulinkvr"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:opacity-70 transition-opacity"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"
+            />
+          </svg>
+        </a>
+
+        <!-- Email -->
+        <a
+          href="mailto:info@ulink.co.za"
+          class="hover:opacity-70 transition-opacity"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+        </a>
+
+        <!-- Phone -->
+        <a
+          href="tel:+27123456789"
+          class="hover:opacity-70 transition-opacity"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+            />
+          </svg>
+        </a>
+      </div>
       </nav>
 
-      <!-- Social Media Icons -->
-      <div class="">
-        <ul class="flex items-start justify-between gap-[3px]">
-          <li>
-            <a
-              href="https://www.facebook.com/ulinksouthafrica/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block hover:opacity-70 transition-opacity"
-            >
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/ulink2all"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block hover:opacity-70 transition-opacity ml-[6px]"
-            >
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.tiktok.com/@ulinkvr"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block hover:opacity-70 transition-opacity ml-[7px]"
-            >
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:info@ulink.co.za"
-              class="block hover:opacity-70 transition-opacity ml-[3px]"
-            >
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="tel:+27123456789"
-              class="block hover:opacity-70 transition-opacity ml-[4px]"
-            >
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <!-- Social Media Icons -->
+      <div
+        class="social-icons-desktop flex items-center justify-center md:justify-end gap-3 mt-6 md:mt-0"
+      >
+        <!-- Facebook -->
+        <a
+          href="https://www.facebook.com/ulinksouthafrica/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:opacity-70 transition-opacity"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+            />
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a
+          href="https://www.instagram.com/ulink2all"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:opacity-70 transition-opacity"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"
+            />
+          </svg>
+        </a>
+
+        <!-- TikTok -->
+        <a
+          href="https://www.tiktok.com/@ulinkvr"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:opacity-70 transition-opacity"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"
+            />
+          </svg>
+        </a>
+
+        <!-- Email -->
+        <a
+          href="mailto:info@ulink.co.za"
+          class="hover:opacity-70 transition-opacity"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+        </a>
+
+        <!-- Phone -->
+        <a
+          href="tel:+27123456789"
+          class="hover:opacity-70 transition-opacity"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+            />
+          </svg>
+        </a>
       </div>
     </header>
 
     <main class="mt-[87px]">
       <!-- hero -->
-      <div class="max-w-8xl flex justify-center flex-col p-4 mt-10 ml-25">
+      <!-- <div class="max-w-8xl flex justify-center flex-col p-4 mt-10 ml-25">
         <h1 class="text-5xl md:text-6xl lg:text-7xl px-10">
           <span class="block text-black">Your go-to Hub for</span>
           <span class="block font-bold overflow-hidden h-24">
@@ -149,18 +245,52 @@
         </h1>
         
         <p class="text-xl px-10 max-w-7xl">
-          Ulink empowers teachers and learners across South Africa and beyond with EdTech </br> solutions. 
-          We connect education and technology through immersive Virtual Reality </br> learning, 360° content, 
-          and Coding and Robotics programmes that prepare students for </br> tomorrow. We provide Office Automation 
-          and digital solutions that help schools and </br> businesses work smarter and more efficiently.
+          Ulink Xr puts the power of Visual Virtual control, back into parents and educators' hands. We aim to ensure every learner, educator and family member, benefit from a non-drowsy, safe, centrally managed scalable, Virtual Reality long term experience 
+
+Providing you long term Coding, Digital and Visual Literacy improvement, together with the added benefits of improved focus, general wellbeing, enthusiasm to learn more 
+
+We strive to gamify learning and Virtual Reality in a safe way, for every household and classroom, lab and commercial training facility to enjoy. 
+
+You, our valuable VR Pioneer, will enjoy designing, creating, coding and immersing yourself in what You have created, together with access to UlinkXR’s curated VR application library.  
         </p>
         <div class="px-10 mt-5">
           <a href="https://ulink.co.za" class="btn btn-orange inline-block">Learn More</a>
         </div>
+      </div> -->
+      <div class="max-w-8xl flex justify-center flex-col p-4 mt-10 ml-0 lg:ml-25">
+        <h1 class="text-4xl md:text-5xl lg:text-7xl px-4 md:px-10">
+          <span class="block text-black mb-1 md:mb-2 lg:mb-4">Your go-to Hub for</span>
+          <span class="block font-bold overflow-hidden h-10 sm:h-12 md:24 lg:h-24">
+            <span class="bg-gradient-to-r from-black to-orange-main bg-clip-text text-transparent inline-block animate-text-slider">
+              <span class="block mb-2 md:mb-4">Office Automation</span>
+              <span class="block mb-2 md:mb-4">Coding & Robotics</span>
+              <span class="block mb-2 md:mb-4">XR Solutions</span>
+              <span class="block mb-2 md:mb-4">Virtual Reality</span>
+            </span>
+          </span>
+        </h1>
+        
+        <p class="text-lg md:text-xl px-4 md:px-10 max-w-7xl">
+          Ulink Xr puts the power of Visual Virtual control, back into parents and educators' hands. 
+          We aim to ensure every learner, educator and family member, benefit from a non-drowsy, safe,
+          centrally managed scalable, Virtual Reality long term experience 
+
+          Providing you long term Coding, Digital and Visual Literacy improvement, together with the 
+          added benefits of improved focus, general wellbeing, enthusiasm to learn more 
+
+          We strive to gamify learning and Virtual Reality in a safe way, for every household and 
+          classroom, lab and commercial training facility to enjoy. 
+
+          You, our valuable VR Pioneer, will enjoy designing, creating, coding and immersing yourself 
+          in what You have created, together with access to UlinkXR's curated VR application library.  
+        </p>
+        <div class="px-4 md:px-10 mt-5">
+          <a href="https://ulink.co.za" class="btn btn-orange inline-block">Learn More</a>
+        </div>
       </div>
 
-      <!-- Ad -->
-      <section class="flex justify-center items-center flex-row gap-20 mt-5 select-none">
+      <!-- Partners -->
+      <section class="grid grid-cols-1 md:grid-cols-4 place-items-center mx-auto gap-5 mt-5 max-w-[70vw] select-none">
         <div class="">
           <img 
             src="./src/assets/images/OCULUS.png" 
@@ -175,8 +305,15 @@
         </div>
         <div>
           <img 
-            src="./src/assets/images/landing-tablet.png" 
-            alt="Tablet"
+            src="./src/assets/icons/plans-DELIGHTEX.png" 
+            alt="DelightEx"
+            class="max-w-40 hover:scale-105 transition-transform"
+            >
+        </div>
+        <div>
+          <img 
+            src="./src/assets/icons/plans-thinglink.png" 
+            alt="ThingLink"
             class="max-w-40 hover:scale-105 transition-transform"
             >
         </div>
@@ -186,9 +323,9 @@
       <section>
         <h3><span class="block text-5xl text-center mt-5">What our clients love</span></h3>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-5 mx-40">
+        <div class="grid grid-cols-1 min-[1149px]:grid-cols-2 mt-10 gap-5 md:max-w-[80vw] mx-auto">
           <!-- card 1 -->
-          <div class="mx-auto w-110 h-65 shadow-custom mix-blend-luminosity hover:mix-blend-normal hover-custom transition-transform p-4 mb-10">
+          <div class="mx-auto w-100 sm:w-110 max-h-65 shadow-custom mix-blend-luminosity hover:mix-blend-normal hover-custom transition-transform p-4 mb-10">
             <div class="flex justify-center">
               <img src="./src/assets/images/OCULUS.png" alt="Oculus" class="w-30 h-30">
               <img src="./src/assets/images/Landing-charging station .png" alt="Charging station" class="w-30 h-30">
@@ -210,7 +347,7 @@
           </div>
   
           <!-- card 2 -->
-          <div class="mx-auto w-110 h-65 shadow-custom mix-blend-luminosity hover:mix-blend-normal hover-custom transition-transform p-4 mb-10">
+          <div class="mx-auto w-100 md:w-110 h-65 shadow-custom mix-blend-luminosity hover:mix-blend-normal hover-custom transition-transform p-4 mb-10">
             <div class="flex justify-center">
               <img src="./src/assets/icons/plans-thinglink.png" alt="Oculus" class="w-30 h-30">
               <img src="./src/assets/icons/plans-DELIGHTEX.png" alt="Charging station" class="w-30 h-30">
@@ -232,7 +369,7 @@
           </div>
   
           <!-- card 3 -->
-           <div class="mx-auto w-110 h-65 shadow-custom mix-blend-luminosity hover:mix-blend-normal hover-custom transition-transform p-4 mb-10">
+           <div class="mx-auto w-100 md:w-110 h-65 shadow-custom mix-blend-luminosity hover:mix-blend-normal hover-custom transition-transform p-4 mb-10">
             <div class="flex justify-center">
               <img src="./src/assets/images/landing-coding.png" alt="Oculus" class="w-70 h-30">
             </div>
@@ -253,7 +390,7 @@
           </div>
   
           <!-- card 4 -->
-          <div class="mx-auto w-110 h-65 shadow-custom mix-blend-luminosity hover:mix-blend-normal hover-custom transition-transform p-4 mb-10">
+          <div class="mx-auto w-100 md:w-110 h-65 shadow-custom mix-blend-luminosity hover:mix-blend-normal hover-custom transition-transform p-4 mb-10">
             <div class="flex justify-center">
               <img src="./src/assets/images/landing-whiteboard.png" alt="Oculus" class="w-70 h-30">
             </div>
@@ -274,7 +411,7 @@
           </div>
   
           <!-- card 5 -->
-           <div class="mx-auto w-110 h-65 shadow-custom mix-blend-luminosity hover:mix-blend-normal hover-custom transition-transform p-4 mb-10">
+           <div class="mx-auto w-100 md:w-110 h-65 shadow-custom mix-blend-luminosity hover:mix-blend-normal hover-custom transition-transform p-4 mb-10">
             <div class="flex justify-center">
               <img src="./src/assets/images/landing-printer.png" alt="Oculus" class="w-50 h-30 object-cover">
               <img src="./src/assets/images/landing-phone.png" alt="Charging station" class="w-50 h-30 object-cover">
@@ -296,7 +433,7 @@
           </div>
   
           <!-- card 6 -->
-           <div class="mx-auto w-110 h-65 shadow-custom mix-blend-luminosity hover:mix-blend-normal hover-custom transition-transform p-4 mb-10">
+           <div class="mx-auto w-100 md:w-110 h-65 shadow-custom mix-blend-luminosity hover:mix-blend-normal hover-custom transition-transform p-4 mb-10">
             <div class="flex justify-center">
               <img src="./src/assets/images/landing-3d-vista.png" alt="Oculus" class="w-80 h-30">
             </div>
@@ -317,10 +454,10 @@
           </div>
         </div>
 
-       </section>
+      </section>
 
-       <!-- banner -->
-       <section class="mb-4">
+      <!-- banner -->
+      <section class="mb-4">
         <div class="flex justify-end">
           <div class="shadow-orange inline-flex items-center p-3 gap-3 shadow-hover hover:sound-wave-simple cursor-pointer transition-all duration-300 relative">
             <div class="relative z-10">
@@ -329,477 +466,488 @@
               </div>
             </div>
             <div class="relative z-10">
-              <p class="text-sm font-medium whitespace-nowrap">Ed Tech Solutions starting at R1 799</p>
+              <p class="text-sm font-medium whitespace-nowrap">Edtech from Lab to Lounge</p>
             </div>
           </div>
         </div>
       </section>
 
-        <section class="mb-10">
-          <div class="flex justify-center items-center flex-col">
-            <h2 class="text-5xl font-bold mb-5">Why Choose <span class="text-orange-main">Ulink</span>?</h2>
-            <div 
-              class="h-90 w-full bg-cover bg-center bg-no-repeat relative"
-              style="background-image: url('./src/assets/images/landing-why-choose-ulink-bg.png')"
-            >
-              <div class="flex justify-center items-center mx-auto h-full">
-                <!-- Left Arrow -->
-                <button id="prevBtn" class="flex items-center justify-center p-4 slider-arrow">
-                  <img src="./src/assets/icons/ei_arrow-left.png" alt="Previous" class="w-15 h-15 cursor-pointer hover:scale-110 transition-transform">
-                </button>
+      <!-- why Ulink -->
+      <section class="mb-10 px-4">
+        <div class="flex justify-center items-center flex-col text-center">
+          
+          <!-- Heading -->
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 leading-tight">
+            Why <span class="text-orange-main">Ulink's</span> 6DOF VR?
+          </h2>
+
+          <!-- Background Wrapper -->
+          <div 
+            class="w-full bg-cover bg-center bg-no-repeat relative py-10"
+            style="background-image: url('./src/assets/images/landing-why-choose-ulink-bg.png')"
+          >
+            <div class="flex items-center justify-center h-full relative">
+              
+              <!-- Left Arrow -->
+              <button id="prevBtn" 
+                class="absolute left-2 sm:left-5 top-1/2 -translate-y-1/2 slider-arrow z-20 p-2 sm:p-4">
+                <img src="./src/assets/icons/ei_arrow-left.png" 
+                  class="w-15 h-15 sm:w-17 sm:h-17 hover:scale-110 transition-transform" />
+              </button>
+
+              <!-- Sliding Content -->
+              <div class="flex flex-col items-center w-full">
                 
-                <!-- Main Content Area -->
-                <div class="flex flex-col items-center">
-                  <!-- Sliding Cards Container -->
-                  <div class="slider-container w-140 overflow-hidden mb-8">
-                    <div id="sliderTrack" class="flex transition-transform duration-500 ease-in-out">
-                      <!-- Card 1 -->
-                      <div class="w-140 bg-white/70 backdrop-blur-sm p-8 flex flex-col shadow-custom shrink-0">
-                        <div class="slider-card mb-6">
-                          <h4 class="text-2xl font-bold text-navygrey-dark mb-4">Accessible, Scalable & Future-Proof</h4>
-                          <p class="text-navygrey-med text-lg leading-relaxed">
-                            Whether you're a business wanting to stay ahead in digital engagement or a school aiming to 
-                            prepare learners for the 21st-century workplace, we make it possible regardless of budget or infrastructure.
-                          </p>
-                        </div>
-                      </div>
+                <!-- Slider Container -->
+                <div class="slider-container w-full max-w-[350px] sm:max-w-[500px] md:max-w-[650px] lg:max-w-[700px] overflow-hidden mb-6 touch-pan-x">
+                  <div id="sliderTrack" class="flex transition-transform duration-500 ease-in-out">
 
-                      <!-- Card 2 -->
-                      <div class="w-140 bg-white/70 backdrop-blur-sm p-8 flex flex-col shadow-custom shrink-0">
-                        <div class="slider-card mb-6">
-                          <h4 class="text-2xl font-bold text-navygrey-dark mb-4">Innovative Technology Solutions</h4>
-                          <p class="text-navygrey-med text-lg leading-relaxed">
-                            From Virtual Reality learning experiences to cutting-edge office automation, we bring the latest 
-                            technology to your fingertips with comprehensive support and training.
-                          </p>
-                        </div>
-                      </div>
-
-                      <!-- Card 3 -->
-                      <div class="w-140 bg-white/70 backdrop-blur-sm p-8 flex flex-col shadow-custom shrink-0">
-                        <div class="slider-card mb-6">
-                          <h4 class="text-2xl font-bold text-navygrey-dark mb-4">Proven Results & Support</h4>
-                          <p class="text-navygrey-med text-lg leading-relaxed">
-                            Join hundreds of satisfied schools and businesses across South Africa. Our dedicated support team 
-                            ensures your success with ongoing maintenance and updates.
-                          </p>
-                        </div>
-                      </div>
+                    <!-- CARD 1 -->
+                    <div class="min-w-full bg-white/70 backdrop-blur-sm p-6 sm:p-8 shadow-custom">
+                      <h4 class="text-xl sm:text-2xl font-bold text-navygrey-dark mb-4">
+                        6 DOF Degrees of Freedom Meta or Pico
+                      </h4>
+                      <p class="text-navygrey-med text-base sm:text-lg leading-relaxed">
+                        Choose 6DOF VR for safe, smooth, and nausea-free learning. Managed Pico or Meta 
+                        headsets protect children's data and ensure healthy, fatigue-free experiences. 
+                        Explore coding, robotics, and missions in full 6DOF VR.
+                      </p>
                     </div>
-                  </div>
-                  
-                  <!-- Fixed Buttons (Don't Slide) -->
-                  <div class="flex justify-center gap-4">
-                    <a href="https://ulink.co.za" class="btn btn-orange">SEE SOLUTIONS</a>
-                    <a href="https://ulink.co.za" class="btn btn-outline-orange">GET A QUOTE</a>
+
+                    <!-- CARD 2 -->
+                    <div class="min-w-full bg-white/70 backdrop-blur-sm p-6 sm:p-8 shadow-custom">
+                      <h4 class="text-xl sm:text-2xl font-bold text-navygrey-dark mb-4">
+                        Innovative Technology Solutions
+                      </h4>
+                      <p class="text-navygrey-med text-base sm:text-lg leading-relaxed">
+                        From VR learning to automation, we bring the latest technology with full support 
+                        and training.
+                      </p>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="min-w-full bg-white/70 backdrop-blur-sm p-6 sm:p-8 shadow-custom">
+                      <h4 class="text-xl sm:text-2xl font-bold text-navygrey-dark mb-4">
+                        Proven Results & Support
+                      </h4>
+                      <p class="text-navygrey-med text-base sm:text-lg leading-relaxed">
+                        Join hundreds of satisfied schools & businesses. Our ongoing support ensures 
+                        smooth operation and long-term success.
+                      </p>
+                    </div>
+
                   </div>
                 </div>
-                
-                <!-- Right Arrow -->
-                <button id="nextBtn" class="flex items-center justify-center p-4 slider-arrow">
-                  <img src="./src/assets/icons/ei_arrow-right.png" alt="Next" class="w-15 h-15 cursor-pointer hover:scale-110 transition-transform">
-                </button>
-              </div>
-          </div>
-        </section>
 
-        <section class="mx-20">
-          <div class="flex justify-center">
-            <img src="./src/assets/logo/ulinkxr-logo1.png" alt="" class="w-80 relative -top-5 object-cover">
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mt-2">
+                  <a href="https://ulink.co.za" class="btn btn-orange w-full sm:w-auto">
+                    SEE SOLUTIONS
+                  </a>
+                  <a href="https://ulink.co.za" class="btn btn-outline-orange w-full sm:w-auto">
+                    GET A QUOTE
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Arrow -->
+              <button id="nextBtn" 
+                class="absolute right-2 sm:right-5 top-1/2 -translate-y-1/2 slider-arrow z-20 p-2 sm:p-4">
+                <img src="./src/assets/icons/ei_arrow-right.png" 
+                  class="w-15 h-15 sm:w-17 sm:h-17 hover:scale-110 transition-transform" />
+              </button>
+
+            </div>
           </div>
-          <div class="grid grid-cols-3 gap-0 w-full items-center shadow-bottom-right rounded-lg">
-            <!-- Text Content (Left side - 2/3) -->
-            <div class="col-span-2 px-8 py-6">
-              <h4 class="text-2xl font-medium mb-4">Vision: The next evolution</h4>
-              <p class="text-lg leading-relaxed">
-                Ulink XR is no longer just a platform to "consume" VR content. It is a classroom hub that curates,
-                delivers, and manages an entire ecosystem of immersive education apps. Hosted on Pico 4 headsets 
-                and centrally managed through the Ulink XR dashboard, this solution brings high-quality learning 
-                experiences to ECD, primary, high schools and home learners with complete teacher control.
+
+        </div>
+      </section>
+
+      <!-- <section>
+        <div class="w-full flex justify-center items-center py-20 select-none">
+          <div class="relative w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] md:w-[550px] md:h-[550px] lg:w-[650px] lg:h-[650px]">
+
+            <div class="absolute inset-0 m-auto w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 bg-black
+                        rounded-full flex flex-col justify-center items-center text-white text-center shadow-xl py-4 pt-4
+                        overflow-visible">
+              <h1 class="text-base sm:text-lg font-bold px-8 z-10 justify-end">7 REASONS FAMILIES BENEFIT FROM VR AT HOME</h1>
+              <p class="text-base sm:text-lg bg-white font-bold text-black w-full h-full pt-1 relative z-20 -mb-8">
+                FROM PLAY TO PURPOSE
               </p>
             </div>
-            
-            <!-- Image (Right side - 1/3) -->
-            <div class="col-span-1 flex justify-end items-center h-full">
-              <img src="./src/assets/images/about-learners-using-pico.png" alt="Students using Pico VR headsets" class="max-h-80 w-auto object-cover">
-            </div>
-          </div>
-        </section>
 
-        <section>
-          <div class="w-[1441px] h-[1033px] relative overflow-hidden">
-            <div class="w-[715.02px] h-[715.02px] left-[363px] top-[123px] absolute">
-              <div class="w-[715.02px] h-[715.02px] left-0 top-0 absolute bg-zinc-300/0 rounded-full border-[15.38px] border-orange-400"></div>
-              <div data-property-1="Default" class="w-72 h-56 left-[409px] top-[-55px] absolute">
-                <div class="w-56 h-56 left-[37.59px] top-0 absolute bg-zinc-400 rounded-full"></div>
-                <div class="left-[246.26px] top-[195px] absolute text-center justify-center text-black text-base font-bold font-['Poppins']">Meta Quest 3 Headsets</div>
-                <div class="w-48 h-0 left-[249.74px] top-[227.04px] absolute outline outline-8 outline-offset-[-3.84px] outline-zinc-400"></div>
-                <img class="w-40 h-52 left-[60.17px] top-[10px] absolute mix-blend-luminosity hover:mix-blend-normal" src="./src/assets/images/OCULUS.png" />
+            <div class="absolute top-0 left-1/2 -translate-x-1/2">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-orange-main rounded-full flex justify-center items-center shadow-md">
+                  <div class="w-8 h-8 bg-white rounded-full"></div>
+                </div>
+                <p class="text-xs sm:text-sm font-semibold mt-2 leading-tight">Shared learning<br>ecosystem</p>
               </div>
             </div>
-            <div class="btn btn-orange left-[650px] top-[460px] absolute inline-flex justify-center items-center">
-              <a>GET A QUOTE</a>
+
+            <div class="absolute top-[12%] right-[10%]">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-orange-main rounded-full flex justify-center items-center shadow-md">
+                  <div class="w-8 h-8 bg-white rounded-full"></div>
+                </div>
+                <p class="text-xs sm:text-sm font-semibold mt-2 leading-tight">Personalized<br>immersive learning<br>education</p>
+              </div>
             </div>
-            <div class="left-[528.87px] top-[380.83px] absolute origin-top-left rotate-[-53.56deg] justify-start text-black text-3xl font-bold font-['Poppins']">T</div>
-            <div class="left-[545.40px] top-[359.29px] absolute origin-top-left rotate-[-46.04deg] justify-start text-black text-3xl font-bold font-['Poppins']">h</div>
-            <div class="left-[566.87px] top-[338.01px] absolute origin-top-left rotate-[-38.37deg] justify-start text-black text-3xl font-bold font-['Poppins']">e</div>
-            <div class="left-[588.47px] top-[321.77px] absolute origin-top-left rotate-[-32.84deg] justify-start text-black text-3xl font-bold font-['Poppins']"> </div>
-            <div class="left-[601.42px] top-[313.44px] absolute origin-top-left rotate-[-26.70deg] justify-start text-black text-3xl font-bold font-['Poppins']">C</div>
-            <div class="left-[629.97px] top-[300.05px] absolute origin-top-left rotate-[-20.26deg] justify-start text-black text-3xl font-bold font-['Poppins']">l</div>
-            <div class="left-[646.33px] top-[294.15px] absolute origin-top-left rotate-[-14.12deg] justify-start text-black text-3xl font-bold font-['Poppins']">a</div>
-            <div class="left-[675.64px] top-[287.51px] absolute origin-top-left rotate-[-6.75deg] justify-start text-black text-3xl font-bold font-['Poppins']">s</div>
-            <div class="left-[701.23px] top-[285px] absolute justify-start text-black text-3xl font-bold font-['Poppins']">s</div>
-            <div class="left-[726.60px] top-[285.56px] absolute origin-top-left rotate-[6.14deg] justify-start text-black text-3xl font-bold font-['Poppins']">r</div>
-            <div class="left-[748.08px] top-[288.17px] absolute origin-top-left rotate-[12.74deg] justify-start text-black text-3xl font-bold font-['Poppins']">o</div>
-            <div class="left-[776.45px] top-[295.21px] absolute origin-top-left rotate-[20.41deg] justify-start text-black text-3xl font-bold font-['Poppins']">o</div>
-            <div class="left-[804.71px] top-[306.11px] absolute origin-top-left rotate-[29.93deg] justify-start text-black text-3xl font-bold font-['Poppins']">m</div>
-            <div class="left-[839.60px] top-[327.83px] absolute origin-top-left rotate-[37.45deg] justify-start text-black text-3xl font-bold font-['Poppins']"> </div>
-            <div class="left-[851.65px] top-[337.14px] absolute origin-top-left rotate-[43.28deg] justify-start text-black text-3xl font-bold font-['Poppins']">K</div>
-            <div class="left-[872.50px] top-[357.82px] absolute origin-top-left rotate-[49.42deg] justify-start text-black text-3xl font-bold font-['Poppins']">i</div>
-            <div class="left-[883.18px] top-[370.67px] absolute origin-top-left rotate-[54.33deg] justify-start text-black text-3xl font-bold font-['Poppins']">t</div>
-            <div data-property-1="Default" class="w-64 h-64 left-[257px] top-[117px] absolute">
-              <div class="w-56 h-56 left-[77.34px] top-[31.61px] absolute bg-zinc-400 rounded-full"></div>
-              <img class="w-56 h-56 left-[50px] top-0 absolute mix-blend-luminosity hover:mix-blend-normal" src="./src/assets/images/Landing-chargingstation.png" />
-              <div class="w-52 h-6 left-[-85.88px] top-[252.66px] absolute text-center justify-center text-black text-base font-bold font-['Poppins']">Smart Charging Station</div>
-              <div class="w-48 h-0 left-[-77.88px] top-[285.12px] absolute outline outline-8 outline-offset-[-3.84px] outline-zinc-400"></div>
+
+            <div class="absolute top-1/2 right-0 -translate-y-1/2">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-orange-main rounded-full flex justify-center items-center shadow-md">
+                  <div class="w-8 h-8 bg-white rounded-full"></div>
+                </div>
+                <p class="text-xs sm:text-sm font-semibold mt-2 leading-tight">Family<br>connection<br>through shared<br>experiences</p>
+              </div>
             </div>
-            <div data-property-1="Default" class="w-56 h-56 left-[934px] top-[414px] absolute">
-              <div class="w-56 h-56 left-0 top-0 absolute bg-zinc-400 rounded-full"></div>
-              <img class="w-56 h-44 left-[6.30px] top-[25.35px] absolute mix-blend-luminosity hover:mix-blend-normal" src="./src/assets/images/landing-UlinkXR Flyers.png" />
-              <div class="w-56 h-4 left-[97.68px] top-[223.08px] absolute text-center justify-center text-black text-base font-bold font-['Poppins']">Preloaded App Library</div>
-              <div class="w-60 h-0 left-[90.35px] top-[251.26px] absolute outline outline-8 outline-offset-[-3.84px] outline-zinc-400"></div>
+
+            <div class="absolute bottom-[12%] right-[10%]">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-orange-main rounded-full flex justify-center items-center shadow-md">
+                  <div class="w-8 h-8 bg-white rounded-full"></div>
+                </div>
+                <p class="text-xs sm:text-sm font-semibold mt-2 leading-tight">Economic<br>empowerment<br>& skills growth</p>
+              </div>
             </div>
-            <div data-property-1="Default" class="w-60 h-56 left-[249px] top-[525px] absolute">
-              <div class="w-56 h-56 left-[21.36px] top-0 absolute bg-zinc-400 rounded-full"></div>
-              <img class="w-52 h-52 left-0 top-[8.54px] absolute mix-blend-luminosity hover:mix-blend-normal" src="./src/assets/images/landing-tablet.png" />
-              <div class="w-80 h-7 left-[-60px] top-[230px] absolute text-center justify-center text-black text-base font-bold font-['Poppins']">Teacher Tablet + Ulink XR Dashboard</div>
-              <div class="w-80 h-0 left-[-47.92px] top-[258.98px] absolute outline outline-8 outline-offset-[-3.84px] outline-zinc-400"></div>
+
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-orange-main rounded-full flex justify-center items-center shadow-md">
+                  <div class="w-8 h-8 bg-white rounded-full"></div>
+                </div>
+                <p class="text-xs sm:text-sm font-semibold mt-2 leading-tight">Safe<br>responsible<br>digital<br>learning</p>
+              </div>
             </div>
-            <div data-property-1="Default" class="w-80 h-56 left-[578px] top-[717px] absolute">
-              <div class="w-56 h-56 left-[41.86px] top-0 absolute bg-zinc-400 rounded-full"></div>
-              <img class="w-80 h-48 left-0 top-[17.94px] absolute mix-blend-luminosity hover:mix-blend-normal" src="./src/assets/images/landing-UlinkXR Flyers 4.png" />
-              <div class="w-[591.15px] h-0 left-[-121px] top-[254.16px] absolute outline outline-8 outline-offset-[-3.84px] outline-zinc-400"></div>
-              <div class="w-[594.57px] h-7 left-[-123px] top-[220px] absolute text-center justify-center text-black text-base font-bold font-['Poppins']">Monthly SLA: Content updates, tech support,  analytics, teacher helpdesk</div>
+
+            <div class="absolute bottom-[12%] left-[10%]">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-orange-main rounded-full flex justify-center items-center shadow-md">
+                  <div class="w-8 h-8 bg-white rounded-full"></div>
+                </div>
+                <p class="text-xs sm:text-sm font-semibold mt-2 leading-tight">Wellness<br>mindfulness,<br>and healing</p>
+              </div>
             </div>
+
+            <div class="absolute top-[12%] left-[10%]">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-orange-main rounded-full flex justify-center items-center shadow-md">
+                  <div class="w-8 h-8 bg-white rounded-full"></div>
+                </div>
+                <p class="text-xs sm:text-sm font-semibold mt-2 leading-tight">Safe,<br>responsible<br>digital<br>parenting</p>
+              </div>
+            </div>
+
+            <div class="absolute left-0 top-1/2 -translate-y-1/2">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-orange-main rounded-full flex justify-center items-center shadow-md">
+                  <div class="w-8 h-8 bg-white rounded-full"></div>
+                </div>
+                <p class="text-xs sm:text-sm font-semibold mt-2 leading-tight">Family as<br>a learning pod</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section> -->
+
+      <section class="mx-2 md:mx-20">
+        <div class="flex justify-center">
+          <img src="./src/assets/logo/ulinkxr-logo1.png" alt="" class="w-80 relative -top-5 object-cover">
+        </div>
+        <div class="grid grid-cols-3 gap-0 w-full items-center shadow-bottom-right">
+          <!-- Text Content (Left side - 2/3) -->
+          <div class="col-span-3 md:col-span-2 px-8 py-6">
+            <h4 class="text-2xl font-medium mb-4">Vision: The next evolution</h4>
+            <p class="text-lg leading-relaxed">
+              You're standing at the edge of the next learning revolution — where you don't just watch the 
+              future happen, you step inside it. <br>
+
+              With UlinkXR's 6 Degrees of Freedom (6DoF) managed headsets, you can create, view, and immerse 
+              in your own world of learning. No screens, no distractions — just pure, safe, interactive exploration 
+              that responds to how you move, think, and grow. <br>
+
+              This is more than VR. It's your space to build confidence, spark creativity, and experience 
+              what the future feels like — in your classroom, your lounge, or your community HomePod. <br>
+
+              You don't have to fear technology anymore. You can trust it. You can shape it. And through 
+              UlinkXR, you can help your family, your school, and your world learn to thrive in the new 
+              era of immersive education — safely, responsibly, and together. <br>
+            </p>
           </div>
           
-        </section>
+          <!-- Image (Right side - 1/3) -->
+          <div class="col-span-0 md:col-span-1 hidden md:flex justify-end items-center h-full">
+            <img src="./src/assets/images/about-learners-using-pico.png" alt="Students using Pico VR headsets" class="max-h-80 w-auto object-cover">
+          </div>
+        </div>
+      </section>
 
-        <section>
+      <section class="px-4 sm:px-8 lg:px-20">
+        <div>
+          <h3 class="text-2xl sm:text-3xl md:text-4xl font-medium text-center mt-5">Why This Matters for ECD & Schools</h3>
+        </div>
+
+        <!-- card 1 -->
+        <div class="feature-card bg-orange-light shadow-custom mt-5 sm:mt-8 rounded-lg overflow-hidden hover:cursor-pointer transition-all duration-300">
+          <div class="feature-content flex justify-between items-center p-4 sm:p-6">
+            <div class="flex items-center gap-4">
+              <img src="./src/assets/icons/landing-teacher-friendly.png" alt="" class="h-10 sm:h-12">
+              <p class="text-lg sm:text-2xl font-bold feature-title">Teacher-Friendly Control</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./src/assets/icons/landing-features-arrow.png" alt="" class="h-10 sm:h-12 arrow-icon transition-transform duration-300">
+            </div>
+          </div>
+          <div class="feature-description p-4 sm:p-6">
+            <p class="text-base sm:text-lg text-navygrey-dark leading-relaxed wrap-break-word">
+              Teacher controls which app runs on which headset. Lock/unlock sessions, pause experiences, broadcast lessons
+              all at once. No side-loading or USB updates; everything is pushed remotely.
+            </p>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="feature-card bg-orange-light shadow-custom mt-5 sm:mt-8 rounded-lg overflow-hidden hover:cursor-pointer transition-all duration-300">
+          <div class="feature-content flex justify-between items-center p-4 sm:p-6">
+            <div class="flex items-center gap-4">
+              <img src="./src/assets/icons/landing-scalable.png" alt="" class="h-10 sm:h-12">
+              <p class="text-lg sm:text-2xl font-bold feature-title">Scalable & Flexible</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./src/assets/icons/landing-features-arrow.png" alt="" class="h-10 sm:h-12 arrow-icon transition-transform duration-300">
+            </div>
+          </div>
+          <div class="feature-description p-4 sm:p-6">
+            <p class="text-base sm:text-lg text-navygrey-dark leading-relaxed wrap-break-word">
+              Start with 4 headsets and scale up to 8, 12 or a full class. Smart charging stations keep devices ready for use.
+              Admin dashboards show usage, progress, and app popularity. 
+            </p>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="feature-card bg-orange-light shadow-custom mt-5 sm:mt-8 rounded-lg overflow-hidden hover:cursor-pointer transition-all duration-300">
+          <div class="feature-content flex justify-between items-center p-4 sm:p-6">
+            <div class="flex items-center gap-4">
+              <img src="./src/assets/icons/landing-6dof.png" alt="" class="h-10 sm:h-12">
+              <p class="text-lg sm:text-2xl font-bold feature-title">Better Than 3DOF "VR Classrooms"</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./src/assets/icons/landing-features-arrow.png" alt="" class="h-10 sm:h-12 arrow-icon transition-transform duration-300">
+            </div>
+          </div>
+          <div class="feature-description p-4 sm:p-6">
+            <p class="text-base sm:text-lg text-navygrey-dark leading-relaxed wrap-break-word">
+              6 degrees of freedom. Less nausea, more natural movement, better engagement. Enables embodied learning;
+              learners can move, build and collaborate. Supports multi-purpose experiences.
+            </p>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="feature-card bg-orange-light shadow-custom mt-5 sm:mt-8 rounded-lg overflow-hidden hover:cursor-pointer transition-all duration-300">
+          <div class="feature-content flex justify-between items-center p-4 sm:p-6">
+            <div class="flex items-center gap-4">
+              <img src="./src/assets/icons/landing-curated-learning.png" alt="" class="h-10 sm:h-12">
+              <p class="text-lg sm:text-2xl font-bold feature-title">Curated Learning Environment</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./src/assets/icons/landing-features-arrow.png" alt="" class="h-10 sm:h-12 arrow-icon transition-transform duration-300">
+            </div>
+          </div>
+          <div class="feature-description p-4 sm:p-6">
+            <p class="text-base sm:text-lg text-navygrey-dark leading-relaxed wrap-break-word">
+              Preloaded with Delightex and ThingLink missions. Access to an ever-growing library of educational app; STEM,
+              literacy, social-emotional learning and creative tools.
+            </p>
+          </div>
+        </div>
+
+        <!-- card 5 -->
+        <div class="feature-card bg-orange-light shadow-custom mt-5 sm:mt-8 rounded-lg overflow-hidden hover:cursor-pointer transition-all duration-300">
+          <div class="feature-content flex justify-between items-center p-4 sm:p-6">
+            <div class="flex items-center gap-4">
+              <img src="./src/assets/icons/landing-at-home-learning.png" alt="" class="h-10 sm:h-12">
+              <p class="text-lg sm:text-2xl font-bold feature-title">Remedial & At-Home Learning</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./src/assets/icons/landing-features-arrow.png" alt="" class="h-10 sm:h-12 arrow-icon transition-transform duration-300">
+            </div>
+          </div>
+          <div class="feature-description p-4 sm:p-6">
+            <p class="text-base sm:text-lg text-navygrey-dark leading-relaxed wrap-break-words">
+              Perfect for special needs education; focused, immersive, low-distraction. Can be shipped to private homes, as long as there's
+              power + internet, parents can unlock curated for learners.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-cover bg-no-repeat h-310" style="background-image: url('./src/assets/images/Landing_Ellipse 5.png')">
           <div>
-            <h3 class="block text-3xl font-medium text-center mt-5">Why This Matters for ECD & Schools</h3>
+            <h2 class="block text-5xl text-white font-medium text-center mt-8 pt-5">FAQ</h2>
           </div>
 
-          <!-- card 1 -->
-          <div class="feature-card bg-orange-light shadow-custom mx-20 mt-5 hover:cursor-pointer transition-all duration-300">
-            <!-- Top row - always visible -->
-            <div class="feature-content flex justify-between items-center">
-              <div class="flex items-center gap-4 pl-1">
-                <img src="./src/assets/icons/landing-teacher-friendly.png" alt="" class="h-12">
-                <p class="text-2xl font-bold pb-1 feature-title">Teacher-Friendly Control</p>
-              </div>
-              <div class="flex items-center pr-2">
-                <img src="./src/assets/icons/landing-features-arrow.png" alt="" class="h-12 arrow-icon transition-transform duration-300">
-              </div>
+          <!-- faq1 -->
+          <div class="faq-card bg-orange-light shadow-custom mx-5 sm:mx-10 md:mx-20 mt-8 hover:cursor-pointer transition-all duration-300 rounded-lg overflow-hidden">
+            <div class="faq-content flex justify-between items-center p-4 sm:p-6">
+              <p class="text-xl font-bold pb-1 pl-4 faq-title wrap-break-words">How does coding and robotics fit into the South African curriculum?</p>
+              <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow h-6 sm:h-8 transition-transform duration-300">
             </div>
-  
-            <!-- Bottom row - expands downward -->
-            <div class="feature-description flex items-center p-8">
-              <p class="text-xl text-navygrey-dark leading-relaxed py-2">
-                Teacher controls which app runs on which headset. Lock/unlock sessions, pause experiences, broadcast lessons
-                all at once. No side-loading or USB updates; everything is pushed remotely from Ulink Headquarters.
+            <div class="faq-description p-4 sm:p-6">
+              <p class="text-lg text-navygrey-dark leading-relaxed wrap-break-words pb-2">
+                Ulink integrates Coding, Robotics, and immersive XR experiences directly into CAPS and IEB-aligned lessons.
+                Learners can move from physical coding tools to interactive digital creation in Delightex and explore their 
+                own 3D worlds in XR, reinforcing ICT, Mathematics, Natural Sciences, etc. through hands-on discovery.
               </p>
             </div>
           </div>
 
-          <!-- card 2 -->
-          <div class="feature-card bg-orange-light shadow-custom mx-20 mt-15 hover:cursor-pointer transition-all duration-300">
-            <!-- Top row - always visible -->
-            <div class="feature-content flex justify-between items-center">
-              <div class="flex items-center gap-4 pl-1">
-                <img src="./src/assets/icons/landing-scalable.png" alt="" class="h-12">
-                <p class="text-2xl font-bold pb-1 feature-title">Scalable & Flexible</p>
-              </div>
-              <div class="flex items-center pr-2">
-                <img src="./src/assets/icons/landing-features-arrow.png" alt="" class="h-12 arrow-icon transition-transform duration-300">
-              </div>
+          <!-- faq2 -->
+          <div class="faq-card bg-orange-light shadow-custom mx-5 sm:mx-10 md:mx-20 mt-15 hover:cursor-pointer transition-all duration-300 rounded-lg overflow-hidden">
+            <div class="faq-content flex justify-between items-center p-4 sm:p-6">
+              <p class="text-xl font-bold pb-1 pl-4 faq-title break-words">Do teachers receive training and support?</p>
+              <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow h-6 sm:h-8 transition-transform duration-300">
             </div>
-  
-            <!-- Bottom row - expands downward -->
-            <div class="feature-description flex items-center p-8">
-              <p class="text-xl text-navygrey-dark leading-relaxed py-2">
-                Start with 4 headsets and scale up to 8, 12 or a full class. Smart charging stations keep devices ready for use.
-                Admin dashboards show usage, progress, and app popularity. 
-              </p>
-            </div>
-          </div>
-          
-          <!-- card 3 -->
-          <div class="feature-card bg-orange-light shadow-custom mx-20 mt-15 hover:cursor-pointer transition-all duration-300">
-            <!-- Top row - always visible -->
-            <div class="feature-content flex justify-between items-center">
-              <div class="flex items-center gap-4 pl-1">
-                <img src="./src/assets/icons/landing-6dof.png" alt="" class="h-12">
-                <p class="text-2xl font-bold pb-1 feature-title">Better Than 3DOF "VR Classrooms"</p>
-              </div>
-              <div class="flex items-center pr-2">
-                <img src="./src/assets/icons/landing-features-arrow.png" alt="" class="h-12 arrow-icon transition-transform duration-300">
-              </div>
-            </div>
-
-            <!-- Bottom row - expands downward -->
-            <div class="feature-description flex items-center p-8">
-              <p class="text-xl text-navygrey-dark leading-relaxed py-2">
-                6 degrees of freedom. Less nausea, more natural movement, better engagement. Enables embodied learning;
-                learners can move, build and collaborate. Supports multi-purpose experiences.
+            <div class="faq-description p-4 sm:p-6">
+              <p class="text-lg text-navygrey-dark leading-relaxed break-words">
+                Yes. Every UlinkXR package includes teacher training, lesson planning, and technical support. Educators are
+                guided step-by-step on how to blend robotics, coding, and VR into their teaching, with ongoing access to Ulink’s
+                digital resource hub and live support team.
               </p>
             </div>
           </div>
 
-          <!-- card 4 -->
-          <div class="feature-card bg-orange-light shadow-custom mx-20 mt-15 hover:cursor-pointer transition-all duration-300">
-            <!-- Top row - always visible -->
-            <div class="feature-content flex justify-between items-center">
-              <div class="flex items-center gap-4 pl-1">
-                <img src="./src/assets/icons/landing-curated-learning.png" alt="" class="h-12">
-                <p class="text-2xl font-bold pb-1 feature-title">Curated Learning Environment</p>
-              </div>
-              <div class="flex items-center pr-2">
-                <img src="./src/assets/icons/landing-features-arrow.png" alt="" class="h-12 arrow-icon transition-transform duration-300">
-              </div>
+          <!-- faq3 -->
+          <div class="faq-card bg-orange-light shadow-custom mx-5 sm:mx-10 md:mx-20 mt-15 hover:cursor-pointer transition-all duration-300 rounded-lg overflow-hidden">
+            <div class="faq-content flex justify-between items-center p-4 sm:p-6">
+              <p class="text-xl font-bold pb-1 pl-4 faq-title break-words">What age group is Matatalab Tale Bot Pro suitable for?</p>
+              <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow h-6 sm:h-8 transition-transform duration-300">
             </div>
-
-            <!-- Bottom row - expands downward -->
-            <div class="feature-description flex items-center p-8">
-              <p class="text-xl text-navygrey-dark leading-relaxed py-2">
-                Preloaded with Delightex and ThingLink missions. Access to an ever-growing library of educational app; STEM,
-                literacy, social-emotional learning and creative tools.
+            <div class="faq-description p-4 sm:p-6">
+              <p class="text-lg text-navygrey-dark leading-relaxed break-words">
+                Matatalab Tale Bot Pro is designed for Early Childhood Development (ECD) and Foundation Phase learners. 
+                It’s screen-free and uses playful coding cards to teach sequencing and logic through storytelling and problem-solving.
               </p>
             </div>
           </div>
 
-          <!-- card 5 -->
-          <div class="feature-card bg-orange-light shadow-custom mx-20 mt-15 hover:cursor-pointer transition-all duration-300">
-            <!-- Top row - always visible -->
-            <div class="feature-content flex justify-between items-center">
-              <div class="flex items-center gap-4 pl-1">
-                <img src="./src/assets/icons/landing-at-home-learning.png" alt="" class="h-12">
-                <p class="text-2xl font-bold pb-1 feature-title">Remedial & At-Home Learning</p>
-              </div>
-              <div class="flex items-center pr-2">
-                <img src="./src/assets/icons/landing-features-arrow.png" alt="" class="h-12 arrow-icon transition-transform duration-300">
-              </div>
+          <!-- faq4 -->
+          <div class="faq-card bg-orange-light shadow-custom mx-5 sm:mx-10 md:mx-20 mt-15 hover:cursor-pointer transition-all duration-300 rounded-lg overflow-hidden">
+            <div class="faq-content flex justify-between items-center p-4 sm:p-6">
+              <p class="text-xl font-bold pb-1 pl-4 faq-title break-words">What coding tools are available for older infrastructure?</p>
+              <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow h-6 sm:h-8 transition-transform duration-300">
             </div>
-
-            <!-- Bottom row - expands downward -->
-            <div class="feature-description flex items-center p-8">
-              <p class="text-xl text-navygrey-dark leading-relaxed py-2">
-                Perfect for special needs education; focused, immersive, low-distraction. Can be shipped to private homes, as long as there's
-                power + internet, parents can unlock curated for learners.
+            <div class="faq-description p-4 sm:p-6">
+              <p class="text-lg text-navygrey-dark leading-relaxed break-words">
+                Older learners can advance to DelightEx Edu Pro, where they code in block-based or Python environments 
+                and create interactive 3D simulations. With UlinkXR, they can step inside their creations using VR 
+                headsets, transforming abstract coding exercises into fully immersive learning experiences.
               </p>
             </div>
           </div>
 
-        </section>
-
-        <section>
-          <div class="bg-cover bg-no-repeat h-310" style="background-image: url('./src/assets/images/Landing_Ellipse\ 5.png')">
-            <div>
-              <h2 class="block text-5xl text-white font-medium text-center mt-8 pt-5">FAQ</h2>
+          <!-- faq5 -->
+          <div class="faq-card bg-orange-light shadow-custom mx-5 sm:mx-10 md:mx-20 mt-15 hover:cursor-pointer transition-all duration-300 rounded-lg overflow-hidden">
+            <div class="faq-content flex justify-between items-center p-4 sm:p-6">
+              <p class="text-xl font-bold pb-1 pl-4 faq-title break-words">How does the VR option enhance learning?</p>
+              <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow h-6 sm:h-8 transition-transform duration-300">
             </div>
-
-            <!-- faq1 -->
-            <div class="faq-card bg-orange-light shadow-custom mx-35 mt-8 hover:cursor-pointer transition-all duration-300">
-              <div class="faq-content flex justify-between items-center">
-                <div class="flex items-center">
-                  <p class="text-xl font-bold pb-1 pl-4 faq-title">How does coding and robotics fit into the South African curriculum?</p>
-                </div>
-                <div class="flex items-center pr-2">
-                  <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow transition-transform duration-300">
-                </div>
-              </div>
-              <div class="faq-description flex items-center p-8">
-                <p class="text-lg  leading-relaxed py-4">
-                  Ulink integrates Coding, Robotics, and immersive XR experiences directly into CAPS and IEB-aligned lessons.
-                  Learners can move from physical coding tools to interactive digital creation in Delightex and explore their 
-                  own 3D worlds in XR, reinforcing ICT, Mathematics, Natural Sciences, etc. through hands-on discovery.
-                </p>
-              </div>
+            <div class="faq-description p-4 sm:p-6">
+              <p class="text-lg text-navygrey-dark leading-relaxed break-words">
+                Through UlinkXR, learners can explore science experiments, historical worlds, or their own digital 
+                projects in lifelike VR using UlinkXR and Meta Quest 3 headsets. This immersion deepens understanding, 
+                boosts engagement, and builds future-ready digital confidence beyond traditional classroom methods.
+              </p>
             </div>
+          </div>
 
-            <!-- faq2 -->
-            <div class="faq-card bg-orange-light shadow-custom mx-35 mt-15 hover:cursor-pointer transition-all duration-300">
-              <div class="faq-content flex justify-between items-center">
-                <div class="flex items-center">
-                  <p class="text-xl font-bold pb-1 pl-4 faq-title">Do teachers receive training and support?</p>
-                </div>
-                <div class="flex items-center pr-2">
-                  <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow transition-transform duration-300">
-                </div>
-              </div>
-              <div class="faq-description flex items-center p-8">
-                <p class="text-lg text-navygrey-dark leading-relaxed py-4">
-                  Yes. Every UlinkXR package includes teacher training, lesson planning, and technical support. Educators are
-                  guided step-by-step on how to blend robotics, coding, and VR into their teaching, with ongoing access to Ulink’s
-                  digital resource hub and live support team.
-                </p>
-              </div>
+          <!-- faq6 -->
+          <div class="faq-card bg-orange-light shadow-custom mx-5 sm:mx-10 md:mx-20 mt-15 hover:cursor-pointer transition-all duration-300 rounded-lg overflow-hidden">
+            <div class="faq-content flex justify-between items-center p-4 sm:p-6">
+              <p class="text-xl font-bold pb-1 pl-4 faq-title break-words">What happens if a school doesn't have strong technical infrastructure?</p>
+              <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow h-6 sm:h-8 transition-transform duration-300">
             </div>
+            <div class="faq-description p-4 sm:p-6">
+              <p class="text-lg text-navygrey-dark leading-relaxed break-words">
+                UlinkXR is designed to scale with your school. You can begin with robotics and browser-based coding, and 
+                when ready, expand into VR learning spaces. Ulink conducts a full “tech check” to ensure smooth 
+                implementation at every stage of your digital transformation journey.
+              </p>
+            </div>
+          </div>
 
-            <!-- faq3 -->
-            <div class="faq-card bg-orange-light shadow-custom mx-35 mt-15 hover:cursor-pointer transition-all duration-300">
-              <div class="faq-content flex justify-between items-center">
-                <div class="flex items-center">
-                  <p class="text-xl font-bold pb-1 pl-4 faq-title">What age group is Matatalab Tale Bot Pro suitable for?</p>
-                </div>
-                <div class="flex items-center pr-2">
-                  <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow transition-transform duration-300">
-                </div>
-              </div>
-              <div class="faq-description flex items-center p-8">
-                <p class="text-lg text-navygrey-dark leading-relaxed py-4">
-                  Matatalab Tale Bot Pro is designed for Early Childhood Development (ECD) and Foundation Phase learners. 
-                  It’s screen-free and uses playful coding cards to teach sequencing and logic through storytelling and problem-solving.
-                </p>
-              </div>
+          <!-- faq7 -->
+          <div class="faq-card bg-orange-light shadow-custom mx-5 sm:mx-10 md:mx-20 mt-15 hover:cursor-pointer transition-all duration-300 rounded-lg overflow-hidden">
+            <div class="faq-content flex justify-between items-center p-4 sm:p-6">
+              <p class="text-xl font-bold pb-1 pl-4 faq-title break-words">Do learners need their own devices?</p>
+              <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow h-6 sm:h-8 transition-transform duration-300">
             </div>
+            <div class="faq-description p-4 sm:p-6">
+              <p class="text-lg text-navygrey-dark leading-relaxed break-words">
+                No. UlinkXR experiences are designed for shared learning. Coding can run on standard browsers, tablets, and 
+                Chromebooks, while VR sessions can rotate between learners using DelightEx and Meta Quest 3 headsets, ensuring 
+                inclusive, collaborative participation without needing one device per child.
+              </p>
+            </div>
+          </div>
 
-            <!-- faq4 -->
-            <div class="faq-card bg-orange-light shadow-custom mx-35 mt-15 hover:cursor-pointer transition-all duration-300">
-              <div class="faq-content flex justify-between items-center">
-                <div class="flex items-center">
-                  <p class="text-xl font-bold pb-1 pl-4 faq-title">What coding tools are available for older infrastructure?</p>
-                </div>
-                <div class="flex items-center pr-2">
-                  <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow transition-transform duration-300">
-                </div>
-              </div>
-              <div class="faq-description flex items-center p-8">
-                <p class="text-lg text-navygrey-dark leading-relaxed py-4">
-                  Older learners can advance to DelightEx Edu Pro, where they code in block-based or Python environments 
-                  and create interactive 3D simulations. With UlinkXR, they can step inside their creations using VR 
-                  headsets, transforming abstract coding exercises into fully immersive learning experiences.
-                </p>
-              </div>
+          <!-- faq8 -->
+          <div class="faq-card bg-orange-light shadow-custom mx-5 sm:mx-10 md:mx-20 mt-15 hover:cursor-pointer transition-all duration-300 rounded-lg overflow-hidden">
+            <div class="faq-content flex justify-between items-center p-4 sm:p-6">
+              <p class="text-xl font-bold pb-1 pl-4 faq-title break-words">What are the costs involved?</p>
+              <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow h-6 sm:h-8 transition-transform duration-300">
             </div>
+            <div class="faq-description p-4 sm:p-6">
+              <p class="text-lg text-navygrey-dark leading-relaxed break-words">
+                Ulink offers flexible rental and purchase options, allowing schools to start their digital journey affordably. 
+                Packages can include robotics kits, DelightEx coding licences, UlinkXR headsets, and full teacher training, 
+                with rentals starting from as little as R699 per month.
+              </p>
+            </div>
+          </div>
 
-            <!-- faq5 -->
-            <div class="faq-card bg-orange-light shadow-custom mx-35 mt-15 hover:cursor-pointer transition-all duration-300">
-              <div class="faq-content flex justify-between items-center">
-                <div class="flex items-center">
-                  <p class="text-xl font-bold pb-1 pl-4 faq-title">How does the VR option enhance learning?</p>
-                </div>
-                <div class="flex items-center pr-2">
-                  <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow transition-transform duration-300">
-                </div>
-              </div>
-              <div class="faq-description flex items-center p-8">
-                <p class="text-lg text-navygrey-dark leading-relaxed py-4">
-                  Through UlinkXR, learners can explore science experiments, historical worlds, or their own digital 
-                  projects in lifelike VR using UlinkXR and Meta Quest 3 headsets. This immersion deepens understanding, 
-                  boosts engagement, and builds future-ready digital confidence beyond traditional classroom methods.
-                </p>
-              </div>
+          <!-- faq9 -->
+          <div class="faq-card bg-orange-light shadow-custom mx-5 sm:mx-10 md:mx-20 mt-15 hover:cursor-pointer transition-all duration-300 rounded-lg overflow-hidden">
+            <div class="faq-content flex justify-between items-center p-4 sm:p-6">
+              <p class="text-xl font-bold pb-1 pl-4 faq-title break-words">How can coding and robotics benefit learners beyond academics?</p>
+              <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow h-6 sm:h-8 transition-transform duration-300">
             </div>
+            <div class="faq-description p-4 sm:p-6">
+              <p class="text-lg text-navygrey-dark leading-relaxed break-words">
+                Together, Ulink’s coding, robotics, and UlinkXR environments build essential 21st-century skills such as creativity, 
+                collaboration, problem-solving, and digital fluency. Learners do not just learn about technology; they learn through 
+                it, preparing for future careers and real-world challenges.
+              </p>
+            </div>
+          </div>
+      </section>
 
-            <!-- faq6 -->
-            <div class="faq-card bg-orange-light shadow-custom mx-35 mt-15 hover:cursor-pointer transition-all duration-300">
-              <div class="faq-content flex justify-between items-center">
-                <div class="flex items-center">
-                  <p class="text-xl font-bold pb-1 pl-4 faq-title">What happens if a school doesn't have strong technical infrastructure?</p>
-                </div>
-                <div class="flex items-center pr-2">
-                  <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow transition-transform duration-300">
-                </div>
-              </div>
-              <div class="faq-description flex items-center p-8">
-                <p class="text-lg text-navygrey-dark leading-relaxed py-4">
-                  UlinkXR is designed to scale with your school. You can begin with robotics and browser-based coding, and 
-                  when ready, expand into VR learning spaces. Ulink conducts a full “tech check” to ensure smooth 
-                  implementation at every stage of your digital transformation journey.
-                </p>
-              </div>
-            </div>
-
-            <!-- faq7 -->
-            <div class="faq-card bg-orange-light shadow-custom mx-35 mt-15 hover:cursor-pointer transition-all duration-300">
-              <div class="faq-content flex justify-between items-center">
-                <div class="flex items-center">
-                  <p class="text-xl font-bold pb-1 pl-4 faq-title">Do learners need their own devices?</p>
-                </div>
-                <div class="flex items-center pr-2">
-                  <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow transition-transform duration-300">
-                </div>
-              </div>
-              <div class="faq-description flex items-center p-8">
-                <p class="text-lg text-navygrey-dark leading-relaxed py-4">
-                  No. UlinkXR experiences are designed for shared learning. Coding can run on standard browsers, tablets, and 
-                  Chromebooks, while VR sessions can rotate between learners using DelightEx and Meta Quest 3 headsets, ensuring 
-                  inclusive, collaborative participation without needing one device per child.
-                </p>
-              </div>
-            </div>
-
-            <!-- faq8 -->
-            <div class="faq-card bg-orange-light shadow-custom mx-35 mt-15 hover:cursor-pointer transition-all duration-300">
-              <div class="faq-content flex justify-between items-center">
-                <div class="flex items-center">
-                  <p class="text-xl font-bold pb-1 pl-4 faq-title">What are the costs involved?</p>
-                </div>
-                <div class="flex items-center pr-2">
-                  <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow transition-transform duration-300">
-                </div>
-              </div>
-              <div class="faq-description flex items-center p-8">
-                <p class="text-lg text-navygrey-dark leading-relaxed py-4">
-                  Ulink offers flexible rental and purchase options, allowing schools to start their digital journey affordably. 
-                  Packages can include robotics kits, DelightEx coding licences, UlinkXR headsets, and full teacher training, 
-                  with rentals starting from as little as R699 per month.
-                </p>
-              </div>
-            </div>
-
-            <!-- faq9 -->
-            <div class="faq-card bg-orange-light shadow-custom mx-35 mt-15 hover:cursor-pointer transition-all duration-300">
-              <div class="faq-content flex justify-between items-center">
-                <div class="flex items-center">
-                  <p class="text-xl font-bold pb-1 pl-4 faq-title">How can coding and robotics benefit learners beyond academics?</p>
-                </div>
-                <div class="flex items-center pr-2">
-                  <img src="./src/assets/icons/landing-faqArrow.png" alt="" class="faq-arrow transition-transform duration-300">
-                </div>
-              </div>
-              <div class="faq-description flex items-center p-8">
-                <p class="text-lg text-navygrey-dark leading-relaxed py-4">
-                  Together, Ulink’s coding, robotics, and UlinkXR environments build essential 21st-century skills such as creativity, 
-                  collaboration, problem-solving, and digital fluency. Learners do not just learn about technology; they learn through 
-                  it, preparing for future careers and real-world challenges.
-                </p>
-              </div>
-            </div>
-        </section>
     </main>
 
-    <footer class="bg-no-repeat h-80 text-white pt-10 px-6 md:px-12 lg:px-20" style="background-image: url('./src/assets/images/BG-Footer.png');">
-      <div class="max-w-7xl mx-auto px-20 pb-10">
+    <footer class="bg-no-repeat bg-cover text-white pt-8 pb-6 px-4 sm:px-4 md:px-8 lg:px-12" style="background-image: url('./src/assets/images/BG-Footer.png');">
+      <div class="max-w-7xl mx-auto">
         <!-- Top Row: Logo + Newsletter -->
-        <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 mb-12">
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 md:gap-8 mb-8 md:mb-12">
           <!-- Logo -->
-          <div class="shrink-0">
-            <img src="./src/assets/logo/ULINKlogo-white.png" alt="Ulink Logo" class="h-12 w-auto">
+          <div class="shrink-0 mb-4 md:mb-0">
+            <img src="./src/assets/logo/ULINKlogo-white.png" alt="Ulink Logo" class="h-10 md:h-12 w-auto">
           </div>
           
           <!-- Newsletter Section -->
-          <div class="flex-1 max-w-100">
-            <div class="flex flex-col md:flex-row items-center justify-end gap-4">
-              <h3 class="text-xl whitespace-nowrap">Join our newsletter</h3>
-              <div class="flex rounded-3xl overflow-hidden bg-white flex-1">
+          <div class="w-full md:max-w-md lg:max-w-lg">
+            <div class="flex flex-col sm:flex-row items-center justify-end gap-3 sm:gap-4">
+              <h3 class="text-lg sm:text-xl font-medium whitespace-nowrap">Join our newsletter</h3>
+              <div class="flex w-full sm:w-auto rounded-3xl overflow-hidden bg-white flex-1 max-w-xs sm:max-w-none">
                 <input 
                   type="email" 
                   placeholder="Email Address" 
-                  class="flex-1 px-3 bg-transparent text-md text-black focus:outline-none"
+                  class="flex-1 px-4 py-3 bg-transparent text-md text-black focus:outline-none w-full"
                 />
-                <button class="relative -left-19 px-4 py-2 rounded-3xl bg-orange-med hover:bg-orange-dark hover:cursor-pointer text-white font-semibold transition whitespace-nowrap">
+                <button class="px-4 py-3 rounded-3xl bg-orange-med hover:bg-orange-light hover:cursor-pointer text-white font-semibold transition whitespace-nowrap">
                   SUBMIT
                 </button>
               </div>
@@ -808,9 +956,9 @@
         </div>
 
         <!-- Bottom Grid: Contact Info, Navigation, Social -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-30">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16">
           <!-- Contact Info -->
-          <div class="space-y-4">
+          <div class="space-y-3 md:space-y-4">
             <div class="flex items-center gap-3">
               <svg class="w-6 h-6 text-orange-med" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm0-13a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6z"/>
@@ -835,19 +983,19 @@
           </div>
           
           <!-- Navigation Links -->
-          <div class="flex justify-center md:justify-start">
+          <div class="flex justify-start md:justify-center lg:justify-start">
             <div class="space-y-4">
-              <a href="#" class="block hover:text-orange-med transition">Home</a>
-              <a href="#" class="block hover:text-orange-med transition">About Us</a>
-              <a href="#" class="block hover:text-orange-med transition">Pricing</a>
-              <a href="./src/pages/privacy.html" class="block hover:text-orange-med transition">Privacy Policy</a>
+              <a href="/" class="block hover:text-orange-med transition">Home</a>
+              <a href="./about.html" class="block hover:text-orange-med transition">About Us</a>
+              <a href="./plans.html" class="block hover:text-orange-med transition">Pricing</a>
+              <a href="./privacy.html" class="block hover:text-orange-med transition">Privacy Policy</a>
             </div>
           </div>
           
           <!-- Social Links -->
-          <div>
-            <h3 class="text-2xl mb-4">Connect with us</h3>
-            <div class="space-y-3">
+          <div class="sm:col-span-2 lg:col-span-1">
+            <h3 class="text-xl md:text-2xl mb-3 md:mb-4">Connect with us</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-3 md:gap-4">
               <a href="#" class="flex items-center gap-3 hover:text-orange-med transition">
                 <svg class="w-6 h-6 text-orange-med" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -870,6 +1018,10 @@
               </a>
             </div>
           </div>
+        </div>
+
+        <div class="mt-8 md:mt-12 pt-4 md:pt-6 border-t border-gray-700 text-center text-sm text-gray-400">
+          <p>&copy; 2023 Ulink. All rights reserved.</p>
         </div>
       </div>
     </footer>
