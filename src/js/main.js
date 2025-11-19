@@ -187,7 +187,8 @@ document.addEventListener('DOMContentLoaded', function () {
       if (currentPage === href ||
         (currentPage.endsWith('/') && href === '/') ||
         (currentPage.includes('about') && href.includes('about')) ||
-        (currentPage.includes('plans') && href.includes('plans'))) {
+        (currentPage.includes('plans') && href.includes('plans')) ||
+        (currentPage.includes('contact') && href.includes('contact'))) {
 
         link.classList.remove('text-[#000000e6]', 'text-[15px]');
         link.classList.add('text-orange-med', 'font-bold', 'text-small-description');
