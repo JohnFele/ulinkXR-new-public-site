@@ -246,7 +246,7 @@ body:has(#mobileMenu:not(.-translate-x-full)) {
   }
   
   .feature-card.expanded {
-    height: 140px;
+    min-height: 210px;
     @apply !bg-orange-lightest;
     grid-template-rows: 25% 1fr;
   }
@@ -293,13 +293,13 @@ body:has(#mobileMenu:not(.-translate-x-full)) {
     grid-template-rows: 1fr 0fr;
     transition: grid-template-rows 0.3s ease-in-out, background-color 0.3s ease-in-out;
     overflow: hidden;
-    height: 60px;
+    min-height: 60px;
   }
   
   .faq-card.expanded {
     @apply !bg-orange-lightest;
     grid-template-rows: 10% 1fr;
-    height: 200px;
+    min-height: 200px;
   }
   
   .faq-card.expanded .faq-arrow {
